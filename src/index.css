@@ -20,3 +20,40 @@ html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Prevent text wrapping utilities */
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* For navigation tabs and similar elements that should stay on one line */
+.tab-no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Flex container that prevents wrapping */
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Responsive text sizing for small screens - scales down instead of wrapping */
+@media (max-width: 640px) {
+  .responsive-text-sm {
+    font-size: 0.75rem; /* 12px */
+  }
+  .responsive-text-xs {
+    font-size: 0.6875rem; /* 11px */
+  }
+  .responsive-text-2xs {
+    font-size: 0.625rem; /* 10px */
+  }
+}
+
+/* Button and link text that shouldn't wrap */
+.btn-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

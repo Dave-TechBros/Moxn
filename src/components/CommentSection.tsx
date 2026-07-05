@@ -25,9 +25,10 @@ interface CommentSectionProps {
   articleId: string;
   articleAuthorId: string;
   onNavigate?: (view: string, params?: any) => void;
+  triggerBanner?: (type: "success" | "error", message: string) => void;
 }
 
-export default function CommentSection({ articleId, articleAuthorId, onNavigate }: CommentSectionProps) {
+export default function CommentSection({ articleId, articleAuthorId, onNavigate, triggerBanner }: CommentSectionProps) {
   const [comments, setComments] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [newCommentBody, setNewCommentBody] = useState("");
@@ -64,6 +65,13 @@ export default function CommentSection({ articleId, articleAuthorId, onNavigate 
 
   const handleCreateComment = async (e: React.FormEvent, parentId?: string) => {
     e.preventDefault();
+    
+    // Check if user is authenticated (not guest)
+    if (!activeUser.id || activeUser.id === "guest") {
+      triggerBanner?.("error", "Please sign in to comment.");
+      return;
+    }
+    
     const bodyText = parentId ? replyBody : newCommentBody;
     if (!bodyText.trim()) return;
 
@@ -104,6 +112,12 @@ export default function CommentSection({ articleId, articleAuthorId, onNavigate 
   };
 
   const handleLikeComment = async (id: string) => {
+    // Check if user is authenticated (not guest)
+    if (!activeUser.id || activeUser.id === "guest") {
+      triggerBanner?.("error", "Please sign in to like comments.");
+      return;
+    }
+    
     try {
       const updated = await api.likeComment(id);
       setComments(prev => prev.map(c => c.id === id ? { ...c, likeCount: updated.likeCount } : c));
@@ -311,6 +325,10 @@ export default function CommentSection({ articleId, articleAuthorId, onNavigate 
             {!isReply && (
               <button 
                 onClick={() => {
+                  if (!activeUser.id || activeUser.id === "guest") {
+                    triggerBanner?.("error", "Please sign in to reply to comments.");
+                    return;
+                  }
                   setReplyToId(replyToId === comment.id ? null : comment.id);
                   setReplyBody("");
                 }}

@@ -441,18 +441,18 @@ export default function UserProfile({ activeUser, viewParams, onNavigate, trigge
         )}
       </div>
 
-      {/* Tab Switcher / Headers */}
+{/* Tab Switcher / Headers */}
       {profile.role !== "Reader" ? (
-        <div className="flex items-center gap-6 border-b border-gray-100 pb-px">
+        <div className="flex items-center gap-4 overflow-x-auto scrollbar-none border-b border-gray-100 pb-px whitespace-nowrap">
           <button
             onClick={() => setActiveTab("publications")}
-            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer ${
+            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer shrink-0 whitespace-nowrap ${
               activeTab === "publications"
                 ? "text-[#1E3A8A]"
                 : "text-gray-400 hover:text-gray-600"
             }`}
           >
-            <BookOpen className="w-4 h-4" />
+            <BookOpen className="w-4 h-4 shrink-0" />
             <span>{isMe ? "My Publications" : `${profile.name}'s Publications`}</span>
             {activeTab === "publications" && (
               <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1E3A8A] rounded-t-full" />
@@ -462,13 +462,13 @@ export default function UserProfile({ activeUser, viewParams, onNavigate, trigge
           {isMe && (
             <button
               onClick={() => setActiveTab("saved")}
-              className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer ${
+              className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer shrink-0 whitespace-nowrap ${
                 activeTab === "saved"
                   ? "text-[#1E3A8A]"
                   : "text-gray-400 hover:text-gray-600"
               }`}
             >
-              <Bookmark className="w-4 h-4" />
+              <Bookmark className="w-4 h-4 shrink-0" />
               <span>Saved Articles</span>
               {activeTab === "saved" && (
                 <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1E3A8A] rounded-t-full" />
@@ -478,13 +478,13 @@ export default function UserProfile({ activeUser, viewParams, onNavigate, trigge
 
           <button
             onClick={() => setActiveTab("liked")}
-            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer ${
+            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer shrink-0 whitespace-nowrap ${
               activeTab === "liked"
                 ? "text-[#1E3A8A]"
                 : "text-gray-400 hover:text-gray-600"
             }`}
           >
-            <Heart className="w-4 h-4" />
+            <Heart className="w-4 h-4 shrink-0" />
             <span>{isMe ? "Liked Stories" : `${profile.name}'s Liked Stories`}</span>
             {activeTab === "liked" && (
               <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1E3A8A] rounded-t-full" />
@@ -492,16 +492,16 @@ export default function UserProfile({ activeUser, viewParams, onNavigate, trigge
           </button>
         </div>
       ) : isMe ? (
-        <div className="flex items-center gap-6 border-b border-gray-100 pb-px">
+        <div className="flex items-center gap-4 overflow-x-auto scrollbar-none border-b border-gray-100 pb-px whitespace-nowrap">
           <button
             onClick={() => setActiveTab("saved")}
-            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer ${
+            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer shrink-0 whitespace-nowrap ${
               activeTab === "saved"
                 ? "text-[#1E3A8A]"
                 : "text-gray-400 hover:text-gray-600"
-              }`}
+            }`}
           >
-            <Bookmark className="w-4 h-4" />
+            <Bookmark className="w-4 h-4 shrink-0" />
             <span>Saved Articles</span>
             {activeTab === "saved" && (
               <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1E3A8A] rounded-t-full" />
@@ -509,13 +509,13 @@ export default function UserProfile({ activeUser, viewParams, onNavigate, trigge
           </button>
           <button
             onClick={() => setActiveTab("liked")}
-            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer ${
+            className={`pb-3 text-sm font-extrabold transition-all relative flex items-center gap-1.5 cursor-pointer shrink-0 whitespace-nowrap ${
               activeTab === "liked"
                 ? "text-[#1E3A8A]"
                 : "text-gray-400 hover:text-gray-600"
             }`}
           >
-            <Heart className="w-4 h-4" />
+            <Heart className="w-4 h-4 shrink-0" />
             <span>Liked Stories</span>
             {activeTab === "liked" && (
               <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1E3A8A] rounded-t-full" />
@@ -524,8 +524,8 @@ export default function UserProfile({ activeUser, viewParams, onNavigate, trigge
         </div>
       ) : (
         <div className="border-b border-gray-100 pb-3">
-          <h2 className="text-base font-extrabold text-gray-900 flex items-center gap-1.5">
-            <Heart className="w-5 h-5 text-[#1E3A8A] fill-[#1E3A8A]" />
+          <h2 className="text-base font-extrabold text-gray-900 flex items-center gap-1.5 whitespace-nowrap">
+            <Heart className="w-5 h-5 text-[#1E3A8A] fill-[#1E3A8A] shrink-0" />
             <span>Stories {profile.name} Liked</span>
           </h2>
           <p className="text-[11px] text-gray-400">Curated collection of saved or liked articles by {profile.name}.</p>

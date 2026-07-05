@@ -53,6 +53,8 @@ interface ArticleViewProps {
   handleShare: (slug: string, title: string, e?: React.MouseEvent) => void;
   getReadTime: (bodyText: string) => string;
   setArticles: React.Dispatch<React.SetStateAction<Article[]>>;
+  handleToggleLike: (id: string, e?: React.MouseEvent) => void;
+  handleToggleBookmark: (id: string, e?: React.MouseEvent) => void;
 }
 
 function ArticleView({
@@ -69,7 +71,9 @@ function ArticleView({
   handleToggleFollow,
   handleShare,
   getReadTime,
-  setArticles
+  setArticles,
+  handleToggleLike,
+  handleToggleBookmark
 }: ArticleViewProps) {
   const { slug } = viewParams;
   const [article, setArticle] = useState<any | null>(null);
@@ -131,19 +135,7 @@ function ArticleView({
 
         <div className="flex items-center space-x-4">
           <button 
-            onClick={() => {
-              api.toggleLike(article.id).then(r => {
-                setLiked(r.liked);
-                setArticle(prev => prev ? { ...prev, likeCount: r.likeCount } : null);
-                setArticles(prev => prev.map(a => a.id === article.id ? { ...a, likeCount: r.likeCount } : a));
-                if (r.liked) {
-                  setLikedIds(p => [...p, article.id]);
-                  triggerBanner("success", "Liked story.");
-                } else {
-                  setLikedIds(p => p.filter(i => i !== article.id));
-                }
-              });
-            }}
+            onClick={() => handleToggleLike(article.id)}
             className={`flex items-center space-x-1 hover:text-red-500 transition-colors ${liked ? "text-red-500 font-extrabold" : ""}`}
           >
             <Heart className={`w-4 h-4 ${liked ? "fill-red-500 text-red-500" : ""}`} />
@@ -151,17 +143,7 @@ function ArticleView({
           </button>
 
           <button 
-            onClick={() => {
-              api.toggleBookmark(article.id).then(r => {
-                setBookmarked(r.bookmarked);
-                if (r.bookmarked) {
-                  setBookmarkedIds(p => [...p, article.id]);
-                  triggerBanner("success", "Bookmarked story.");
-                } else {
-                  setBookmarkedIds(p => p.filter(i => i !== article.id));
-                }
-              });
-            }}
+            onClick={() => handleToggleBookmark(article.id)}
             className={`hover:text-[#1E3A8A] transition-colors ${bookmarked ? "text-blue-600 font-extrabold" : ""}`}
           >
             <Bookmark className={`w-4 h-4 ${bookmarked ? "fill-blue-600 text-blue-600" : ""}`} />
@@ -268,7 +250,7 @@ function ArticleView({
       )}
 
       {/* Threaded Discussion board */}
-      <CommentSection articleId={article.id} articleAuthorId={article.authorId} onNavigate={handleNavigate} />
+      <CommentSection articleId={article.id} articleAuthorId={article.authorId} onNavigate={handleNavigate} triggerBanner={triggerBanner} />
 
       {/* Related articles matrix */}
       {related.length > 0 && (
@@ -499,6 +481,12 @@ export default function App() {
 
   const handleToggleLike = async (id: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
+    
+    if (!activeUser.id || activeUser.id === "guest") {
+      triggerBanner("error", "Please sign in to like articles.");
+      return;
+    }
+    
     try {
       const resp = await api.toggleLike(id);
       setArticles(prev => prev.map(a => a.id === id ? { ...a, likeCount: resp.likeCount } : a));
@@ -516,6 +504,12 @@ export default function App() {
 
   const handleToggleBookmark = async (id: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
+    
+    if (!activeUser.id || activeUser.id === "guest") {
+      triggerBanner("error", "Please sign in to bookmark articles.");
+      return;
+    }
+    
     try {
       const resp = await api.toggleBookmark(id);
       if (resp.bookmarked) {
@@ -1032,6 +1026,8 @@ export default function App() {
                 handleShare={handleShare}
                 getReadTime={getReadTime}
                 setArticles={setArticles}
+                handleToggleLike={handleToggleLike}
+                handleToggleBookmark={handleToggleBookmark}
               />
             )}
             {currentView === "write" && renderWriteView()}
