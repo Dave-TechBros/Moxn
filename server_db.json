@@ -109,6 +109,17 @@
       "createdAt": "2026-03-28T13:15:00Z",
       "followersCount": 1200,
       "followingCount": 150
+    },
+    {
+      "id": "guest",
+      "name": "Guest Reader",
+      "email": "guest@reader.com",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "role": "Reader",
+      "bio": "An active reader of design, modern technology, and global affairs.",
+      "createdAt": "2026-06-01T12:00:00Z",
+      "followersCount": 0,
+      "followingCount": 5
     }
   ],
   "articles": [
@@ -177,7 +188,7 @@
       "createdAt": "2026-06-26T14:00:00Z",
       "updatedAt": "2026-06-27T09:15:00Z",
       "readCount": 1240,
-      "likeCount": 98,
+      "likeCount": 99,
       "tags": [
         "Clean Energy",
         "Infrastructure",
@@ -540,6 +551,11 @@
       "userId": "user-writer-1",
       "articleId": "art-2",
       "createdAt": "2026-06-26T12:00:00Z"
+    },
+    {
+      "userId": "user-writer-1",
+      "articleId": "art-4",
+      "createdAt": "2026-07-15T23:49:07.464Z"
     }
   ],
   "likes": [
@@ -547,6 +563,11 @@
       "userId": "user-editor",
       "articleId": "art-1",
       "createdAt": "2026-06-25T12:01:00Z"
+    },
+    {
+      "userId": "user-writer-1",
+      "articleId": "art-3",
+      "createdAt": "2026-07-15T23:49:06.700Z"
     }
   ],
   "followers": [
@@ -566,6 +587,16 @@
       "link": "/dashboard?tab=drafts",
       "read": false,
       "createdAt": "2026-06-29T10:00:00Z"
+    },
+    {
+      "id": "not-1784159346700",
+      "userId": "user-writer-4",
+      "type": "Comment",
+      "title": "Article Liked",
+      "message": "Sarah Jenkins liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "read": false,
+      "createdAt": "2026-07-15T23:49:06.700Z"
     }
   ],
   "subscribers": [

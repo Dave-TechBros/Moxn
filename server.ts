@@ -22,7 +22,7 @@ let isLoadedFromFirestore = false;
 let loadPromise: Promise<any> | null = null;
 
 async function ensureDbLoaded() {
-  if (isLoadedFromFirestore && MEMORY_DB) {
+  if (MEMORY_DB) {
     return MEMORY_DB;
   }
   if (!loadPromise) {
@@ -30,13 +30,12 @@ async function ensureDbLoaded() {
       if (!MEMORY_DB) {
         initDatabase(); // This reads from disk synchronously first
       }
-      if (firestoreDbInstance) {
+      if (firestoreDbInstance && !MEMORY_DB) {
         console.log("[Firestore] ensureDbLoaded: Fetching database from Cloud Firestore...");
         try {
           const firestoreDb = await loadFromFirestore();
           if (firestoreDb) {
             MEMORY_DB = firestoreDb;
-            isLoadedFromFirestore = true;
             try {
               fs.writeFileSync(DB_FILE, JSON.stringify(firestoreDb, null, 2));
             } catch (writeErr) {
@@ -44,14 +43,12 @@ async function ensureDbLoaded() {
             }
           } else {
             console.warn("[Firestore] Failed to load database from Firestore (returned null), will retry on next request.");
-            loadPromise = null; // Clear so next request will retry
+            loadPromise = null;
           }
         } catch (dbErr) {
           console.error("[Firestore] Error loading database from Firestore, will retry on next request:", dbErr);
-          loadPromise = null; // Clear so next request will retry
+          loadPromise = null;
         }
-      } else {
-        isLoadedFromFirestore = true; // No Firestore, fallback to local
       }
     })();
   }
@@ -59,7 +56,7 @@ async function ensureDbLoaded() {
     await loadPromise;
   } catch (err) {
     console.error("[Firestore] loadPromise rejected, using local database:", err);
-    loadPromise = null; // Reset so next request can retry
+    loadPromise = null;
   }
   return MEMORY_DB!;
 }
