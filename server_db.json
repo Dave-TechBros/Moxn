@@ -1,367 +1,276 @@
 {
   "users": [
     {
-      "id": "user-editor",
-      "name": "Arthur Vance",
-      "email": "editor@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
-      "role": "Editor",
-      "bio": "Editor-in-Chief at MOXN. 15+ years in digital journalism. Passionate about ethics, clarity, and bold reporting.",
-      "createdAt": "2026-01-10T12:00:00Z",
-      "followersCount": 1250,
-      "followingCount": 340
-    },
-    {
-      "id": "user-writer-1",
-      "name": "Sarah Jenkins",
-      "email": "sarah@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
-      "role": "Writer",
-      "bio": "Senior Tech Correspondent. Ex-Wired. Covering the intersection of AI, hardware design, and digital human rights.",
-      "createdAt": "2026-02-15T09:00:00Z",
-      "followersCount": 940,
-      "followingCount": 120
-    },
-    {
-      "id": "user-writer-2",
-      "name": "David Chen",
-      "email": "david@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
-      "role": "Writer",
-      "bio": "AI Architect & Computational Essayist. Documenting the cognitive boundaries of machine learning and large scale systems.",
-      "createdAt": "2026-02-20T10:30:00Z",
-      "followersCount": 780,
-      "followingCount": 95
-    },
-    {
-      "id": "user-writer-3",
-      "name": "Elena Rostova",
-      "email": "elena@moxn.com",
+      "createdAt": "2026-06-01T12:00:00Z",
+      "bio": "An active reader of design, modern technology, and global affairs.",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "name": "Guest Reader",
+      "role": "Reader",
+      "followingCount": 5,
+      "id": "guest",
+      "email": "guest@reader.com",
+      "followersCount": 0
+    },
+    {
+      "bio": "A test reader",
+      "avatar": "https://images.unsplash.com/photo-1500000899738?w=150",
+      "createdAt": "2026-07-05T16:58:23.562Z",
+      "email": "test@test.com",
+      "id": "test-new-user-1",
+      "followingCount": 0,
+      "followersCount": 1,
+      "password": "pass123",
+      "role": "Reader",
+      "name": "Test User"
+    },
+    {
+      "password": "12345678",
+      "role": "Reader",
+      "name": "abraham david",
+      "email": "kingdav949@gmail.com",
+      "id": "user-1783105629479",
+      "followingCount": 0,
+      "followersCount": 0,
+      "createdAt": "2026-07-04T06:08:34.552Z",
+      "bio": "curious",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150"
+    },
+    {
+      "followersCount": 1,
+      "id": "user-1783145709270",
+      "followingCount": 0,
+      "email": "khvngdave9@gmail.com",
+      "name": "King Dave",
       "role": "Writer",
+      "password": "12345678",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "bio": "A young curious  journalists ",
+      "createdAt": "2026-07-05T15:42:47.595Z"
+    },
+    {
+      "followersCount": 0,
+      "followingCount": 0,
+      "id": "user-1783269673454",
+      "email": "Cookiegin22@gmail.com",
+      "name": "Cookie Gin",
+      "role": "Writer",
+      "password": "12345678",
+      "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150",
+      "bio": "Badboy",
+      "createdAt": "2026-07-16T06:12:34.653Z"
+    },
+    {
+      "createdAt": "2026-07-05T16:58:49.265Z",
+      "bio": "A test reader",
+      "avatar": "https://images.unsplash.com/photo-1500000844863?w=150",
+      "role": "Reader",
+      "name": "Test Reader",
+      "password": "pass123",
+      "id": "user-1783270729265",
+      "followingCount": 0,
+      "email": "test-reader@test.com",
+      "followersCount": 0
+    },
+    {
+      "name": "New User FN",
+      "role": "Reader",
+      "password": "pass",
+      "followingCount": 0,
+      "id": "user-1783270847202",
+      "email": "newuser-fn@test.com",
+      "followersCount": 0,
+      "createdAt": "2026-07-05T17:00:47.202Z",
+      "bio": "Correspondent covering Reader perspectives on society and innovation.",
+      "avatar": "https://images.unsplash.com/photo-1500000342450?w=150"
+    },
+    {
+      "avatar": "https://images.unsplash.com/photo-1500000387470?w=150",
+      "bio": "test",
+      "createdAt": "2026-07-05T17:01:56.190Z",
+      "followersCount": 0,
+      "followingCount": 0,
+      "id": "user-1783270916190",
+      "email": "flow-test@test.com",
+      "name": "Flow Test",
+      "role": "Writer",
+      "password": "pass"
+    },
+    {
+      "name": "Test User",
+      "role": "Reader",
+      "password": "pass",
+      "followersCount": 0,
+      "followingCount": 0,
+      "id": "user-1783271653412",
+      "email": "test-user@test.com",
+      "createdAt": "2026-07-05T17:14:13.412Z",
+      "avatar": "https://images.unsplash.com/photo-1500000251441?w=150",
+      "bio": "Correspondent covering Reader perspectives on society and innovation."
+    },
+    {
+      "createdAt": "2026-07-14T08:15:18.203Z",
+      "bio": "test",
+      "avatar": "https://images.unsplash.com/photo-1500000778698?w=150",
+      "role": "Writer",
+      "name": "Final Test User",
+      "password": "pass",
+      "id": "user-1784016918203",
+      "followingCount": 0,
+      "email": "final-test@test.com",
+      "followersCount": 0
+    },
+    {
+      "createdAt": "2026-01-10T12:00:00Z",
+      "bio": "Editor-in-Chief at MOXN. 15+ years in digital journalism. Passionate about ethics, clarity, and bold reporting.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "name": "Arthur Vance",
+      "role": "Editor",
+      "email": "editor@moxn.com",
+      "id": "user-editor",
+      "followingCount": 340,
+      "followersCount": 1250
+    },
+    {
+      "bio": "Senior Tech Correspondent. Ex-Wired. Covering the intersection of AI, hardware design, and digital human rights.",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "createdAt": "2026-02-15T09:00:00Z",
+      "email": "sarah@moxn.com",
+      "followingCount": 120,
+      "id": "user-writer-1",
+      "followersCount": 940,
+      "role": "Writer",
+      "name": "Sarah Jenkins"
+    },
+    {
+      "createdAt": "2026-02-20T10:30:00Z",
+      "bio": "AI Architect & Computational Essayist. Documenting the cognitive boundaries of machine learning and large scale systems.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "name": "David Chen",
+      "role": "Writer",
+      "email": "david@moxn.com",
+      "followingCount": 95,
+      "id": "user-writer-2",
+      "followersCount": 780
+    },
+    {
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
       "bio": "International Affairs Reporter. Specializing in geopolitical strategies, supply chains, and environmental migration.",
       "createdAt": "2026-03-01T08:15:00Z",
       "followersCount": 650,
-      "followingCount": 140
+      "id": "user-writer-3",
+      "followingCount": 140,
+      "email": "elena@moxn.com",
+      "role": "Writer",
+      "name": "Elena Rostova"
     },
     {
-      "id": "user-writer-4",
       "name": "Marcus Vance",
-      "email": "marcus@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150",
       "role": "Writer",
-      "bio": "Venture Partner & Market Strategist. Decoupling macroeconomics and emerging markets from technological hype cycles.",
-      "createdAt": "2026-03-05T14:40:00Z",
       "followersCount": 1100,
-      "followingCount": 210
+      "email": "marcus@moxn.com",
+      "id": "user-writer-4",
+      "followingCount": 210,
+      "createdAt": "2026-03-05T14:40:00Z",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150",
+      "bio": "Venture Partner & Market Strategist. Decoupling macroeconomics and emerging markets from technological hype cycles."
     },
     {
-      "id": "user-writer-5",
-      "name": "Dr. Clara DuPont",
-      "email": "clara@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
-      "role": "Writer",
-      "bio": "Astrophysicist & Science Communicator. Writing about space flight telemetry, high-energy particle mechanics, and deep space telemetry.",
-      "createdAt": "2026-03-10T11:20:00Z",
       "followersCount": 880,
-      "followingCount": 80
+      "followingCount": 80,
+      "id": "user-writer-5",
+      "email": "clara@moxn.com",
+      "name": "Dr. Clara DuPont",
+      "role": "Writer",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+      "bio": "Astrophysicist & Science Communicator. Writing about space flight telemetry, high-energy particle mechanics, and deep space telemetry.",
+      "createdAt": "2026-03-10T11:20:00Z"
     },
     {
-      "id": "user-writer-6",
-      "name": "James Patterson",
-      "email": "james@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
-      "role": "Writer",
-      "bio": "Sports Data Analyst. Visualizing player metrics, athletic longevity, and tactical patterns in global sports leagues.",
-      "createdAt": "2026-03-15T15:00:00Z",
       "followersCount": 520,
-      "followingCount": 105
+      "email": "james@moxn.com",
+      "id": "user-writer-6",
+      "followingCount": 105,
+      "role": "Writer",
+      "name": "James Patterson",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+      "bio": "Sports Data Analyst. Visualizing player metrics, athletic longevity, and tactical patterns in global sports leagues.",
+      "createdAt": "2026-03-15T15:00:00Z"
     },
     {
-      "id": "user-writer-7",
-      "name": "Chloe Bennett",
-      "email": "chloe@moxn.com",
       "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-      "role": "Writer",
       "bio": "Culture Critic & Design Historian. Reviewing physical architectures, minimalist living frameworks, and high-modern fashion.",
       "createdAt": "2026-03-20T16:10:00Z",
       "followersCount": 670,
-      "followingCount": 190
+      "id": "user-writer-7",
+      "followingCount": 190,
+      "email": "chloe@moxn.com",
+      "role": "Writer",
+      "name": "Chloe Bennett"
     },
     {
-      "id": "user-writer-8",
-      "name": "Leo Sterling",
-      "email": "leo@moxn.com",
+      "createdAt": "2026-03-25T09:45:00Z",
+      "bio": "Business Ethicist and Strategist. Consulting globally on executive integrity, sustainability matrices, and digital monopolies.",
       "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150",
       "role": "Writer",
-      "bio": "Business Ethicist and Strategist. Consulting globally on executive integrity, sustainability matrices, and digital monopolies.",
-      "createdAt": "2026-03-25T09:45:00Z",
-      "followersCount": 490,
-      "followingCount": 75
+      "name": "Leo Sterling",
+      "email": "leo@moxn.com",
+      "followingCount": 75,
+      "id": "user-writer-8",
+      "followersCount": 490
     },
     {
-      "id": "user-writer-9",
-      "name": "Sophia Martinez",
-      "email": "sophia@moxn.com",
-      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
-      "role": "Writer",
-      "bio": "Biotech & Longevity Researcher. Covering circadian biology, nutritional metabolism, and genomic healthcare innovations.",
       "createdAt": "2026-03-28T13:15:00Z",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
+      "bio": "Biotech & Longevity Researcher. Covering circadian biology, nutritional metabolism, and genomic healthcare innovations.",
+      "role": "Writer",
+      "name": "Sophia Martinez",
       "followersCount": 1200,
+      "email": "sophia@moxn.com",
+      "id": "user-writer-9",
       "followingCount": 150
-    },
-    {
-      "id": "guest",
-      "name": "Guest Reader",
-      "email": "guest@reader.com",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
-      "role": "Reader",
-      "bio": "An active reader of design, modern technology, and global affairs.",
-      "createdAt": "2026-06-01T12:00:00Z",
-      "followersCount": 0,
-      "followingCount": 5
     }
   ],
   "articles": [
     {
-      "id": "art-1",
-      "title": "The Next Threshold of Large Multimodal Architecture",
       "slug": "next-threshold-large-multimodal-architecture",
-      "subtitle": "How neural networks are expanding beyond text into real-time perceptual logic and dynamic spatial tracking.",
-      "body": "### The Shift in Perceptual Frontiers\n\nFor the past several years, artificial intelligence research has maintained a dominant focus on sequence modeling, primarily text. Large language models (LLMs) proved that next-token prediction can achieve remarkable reasoning approximations. However, true understanding requires sensory convergence.\n\nHuman intelligence does not operate in isolated linguistic blocks. We perceive, cross-reference, and act. This is the genesis of modern Multimodal Architecture.\n\n```typescript\ninterface MultimodalInput {\n  visualFrame: ImageData;\n  telemetryStream: ArrayBuffer;\n  acousticVector: Float32Array;\n}\n```\n\n#### Cross-Attention and Latent Space Fusion\n\nRather than training separate encoders and stitching them together with shallow dense layers, modern networks utilize unified attention spaces. Audio, visual, and text data are projected into a singular, cohesive vector space.\n\n*   **Spatial Temporal Invariance:** Systems can track objects continuously across frames, referencing historical spatial coordinates.\n*   **Acoustic Semantics:** Sound is not just transcribed; pitch, environmental resonance, and emotional tone are parsed concurrently.\n*   **Dynamic Prompting:** The prompt is no longer just words; it is an active state containing real-time sensory feeds.\n\n#### The Next Milestones\n\nWe are heading toward systems that can reason through real-world visual environments in microseconds. Autonomous systems, smart assistive devices, and creative toolkits will transition from reactive agents to highly proactive, co-perceptive collaborators.",
-      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80",
-      "status": "Published",
-      "featured": true,
-      "authorId": "user-writer-2",
-      "categoryId": "tech",
-      "publishedAt": "2026-06-25T08:00:00Z",
-      "createdAt": "2026-06-24T14:30:00Z",
-      "updatedAt": "2026-06-25T08:00:00Z",
-      "readCount": 3450,
-      "likeCount": 289,
+      "seoTitle": "Large Multimodal AI Architecture Breakthroughs - MOXN",
+      "id": "art-1",
       "tags": [
         "Artificial Intelligence",
         "Neural Networks",
         "Deep Learning",
         "Technology"
       ],
-      "seoTitle": "Large Multimodal AI Architecture Breakthroughs - MOXN",
-      "seoDescription": "An in-depth exploration of unified latent spaces, cross-attention mechanics, and real-time perceptual intelligence in next-generation AI."
-    },
-    {
-      "id": "art-2",
-      "title": "Quantum Decoupling and the Search for Absolute Entanglement",
-      "slug": "quantum-decoupling-absolute-entanglement",
-      "subtitle": "A detailed investigation of cryogenic stability chambers and macroscopic quantum coherence limits.",
-      "body": "### Macroscopic Coherence Under Scrutiny\n\nIn quantum mechanics, environmental noise is the absolute enemy. Decoupling a physical qubit from electromagnetic fluctuations, thermal energy, and gravity is a major engineering hurdle.\n\nRecent experiments at the CERN Cryogenics Facility have pushed superconducting transmon qubits to unprecedented coherence times. \n\n#### Cryogenic Vacuum Engineering\n\nBy reducing operational temperatures to **10 millikelvin** (colder than interstellar space), researchers isolated a grid of forty qubits for over 300 seconds.\n\n1.  **Thermal Isolation:** Utilizing multi-stage dilution refrigerators.\n2.  **Magnetic Shielding:** Active mumetal casings blocking Earth's magnetic fields.\n3.  **Radio Frequency Filtration:** High-density coaxial attenuators dampening stray photons.\n\n#### What Lies Ahead?\n\nIf macroscopic entanglement can survive outside cryogenic chambers, the computational capacity of modern cryptography would be upended. Quantum Key Distribution (QKD) would become the global default for secure networking, making intercept-based eavesdropping theoretically impossible.",
-      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80",
+      "readCount": 3450,
       "status": "Published",
+      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80",
+      "publishedAt": "2026-06-25T08:00:00Z",
+      "seoDescription": "An in-depth exploration of unified latent spaces, cross-attention mechanics, and real-time perceptual intelligence in next-generation AI.",
       "featured": true,
-      "authorId": "user-writer-5",
-      "categoryId": "science",
-      "publishedAt": "2026-06-26T10:00:00Z",
-      "createdAt": "2026-06-25T11:00:00Z",
-      "updatedAt": "2026-06-26T10:00:00Z",
-      "readCount": 1850,
-      "likeCount": 154,
-      "tags": [
-        "Quantum Computing",
-        "Physics",
-        "Cryogenics",
-        "Science"
-      ],
-      "seoTitle": "Quantum Decoupling and Entanglement - MOXN Science",
-      "seoDescription": "Examining superconducting transmon qubits, 10mK cryogenic cooling, and the roadmap to absolute quantum entanglement in security systems."
-    },
-    {
-      "id": "art-3",
-      "title": "The Silent Transformation of Global Micro-Grid Infrastructure",
-      "slug": "silent-transformation-global-micro-grid-infrastructure",
-      "subtitle": "Decentralized energy distribution is quietly outpacing centralized grid reliability in major industrial sectors.",
-      "body": "### The Collapse of the Central Grid Paradigm\n\nFor over a century, power generation relied on massive, high-voltage transmission lines connecting distant generating plants to urban consumer hubs. But rising grid vulnerability—from extreme weather to deliberate infrastructure attacks—has accelerated a structural shift.\n\nEnter **Micro-Grids**: self-contained localized power grids that can detach from the regional utility seamlessly.\n\n#### Algorithmic Load Balancing\n\nModern micro-grids are not just panels and batteries. They run specialized machine learning workloads that predict power demand, adjust solar-battery reserves, and trade surplus electricity with neighbors on real-time micro-markets.\n\n*   **Islanding Speed:** The transition from grid-tied to isolated mode takes less than **16 milliseconds**.\n*   **Resource Diversity:** Combining hydrogen fuel cells, rooftop photovoltaics, and recycled electric vehicle battery packs.\n*   **Democratic Pricing:** Smart contracts facilitating direct peer-to-peer billing without utility markup.\n\n#### Regional Case Studies\n\nIn rural Saxony, Germany, a community-owned micro-grid achieved 100% autonomy throughout the winter of 2025, operating entirely on localized solar-hydrogen synthesis. This template is currently being adapted across vulnerable Pacific islands and North American manufacturing corridors.",
-      "coverImage": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
-      "status": "Published",
-      "featured": false,
-      "authorId": "user-writer-4",
-      "categoryId": "business",
-      "publishedAt": "2026-06-27T09:15:00Z",
-      "createdAt": "2026-06-26T14:00:00Z",
-      "updatedAt": "2026-06-27T09:15:00Z",
-      "readCount": 1240,
-      "likeCount": 99,
-      "tags": [
-        "Clean Energy",
-        "Infrastructure",
-        "Economics",
-        "Micro-grids"
-      ],
-      "seoTitle": "Global Micro-Grid Energy Disruption - MOXN Business",
-      "seoDescription": "How algorithmic local power grids are shifting energy generation away from centralized utilities through peer-to-peer markets."
-    },
-    {
-      "id": "art-4",
-      "title": "Vascular Aging: Reversing Cellular Stiffness through Biotech",
-      "slug": "vascular-aging-reversing-cellular-stiffness-biotech",
-      "subtitle": "New clinical trials targeting senolytic clearance in arterial tissue show promising arterial age reversal.",
-      "body": "### The Arterial Rigidity Matrix\n\nVascular stiffness is a hallmark of human aging. As arterial walls accumulate fibrotic tissue and calcified deposits, elasticity declines, leading to chronic blood pressure strain.\n\nRecent laboratory investigations at the Lausanne Institute of Biotech have discovered a specific peptide, **TX-402**, which induces targeted autophagy of senescent vascular cells.\n\n#### The TX-402 Protocol\n\nBy selectively purging cells that have entered cell-cycle arrest (senescent cells), the peptide rejuvenates the extracellular matrix of the aorta.\n\n*   **Elastin Regeneration:** Clinical monitors showed a **22% increase** in arterial elastin density over 6 months.\n*   **Calcification Clearance:** Micro-calcium plaques were safely dissolved and metabolized.\n*   **Endothelial Function:** Nitric oxide production—which prompts blood vessel relaxation—was restored to youthful baselines.\n\n#### Safety and Scalability\n\nWhile human trials are currently restricted to Phase II, the cardiovascular profiles of test subjects have demonstrated no off-target toxicity. This represents one of the most promising vectors for therapeutic life-span extensions.",
-      "coverImage": "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
-      "status": "Published",
-      "featured": false,
-      "authorId": "user-writer-9",
-      "categoryId": "health",
-      "publishedAt": "2026-06-28T07:30:00Z",
-      "createdAt": "2026-06-27T08:00:00Z",
-      "updatedAt": "2026-06-28T07:30:00Z",
-      "readCount": 2210,
-      "likeCount": 176,
-      "tags": [
-        "Biotech",
-        "Longevity",
-        "Cardiovascular",
-        "Medicine"
-      ],
-      "seoTitle": "Reversing Vascular Stiffness and Arterial Aging - MOXN",
-      "seoDescription": "A deep dive into peptide TX-402 clinical trials targeting cellular senescence to restore vascular elasticity and elastin density."
-    },
-    {
-      "id": "art-5",
-      "title": "Designing for Solitude: The Architecture of Quiet Spaces",
-      "slug": "designing-for-solitude-architecture-quiet-spaces",
-      "subtitle": "How contemporary urban architects are pushing back against open-plan noise with modular acoustic cells.",
-      "body": "### The Tyranny of Constant Connection\n\nWe live in a world of inescapable audio stimulus. From public transport alerts to the ambient buzz of corporate open-plan layouts, quiet has become a rare luxury. \n\nRecognizing this, progressive architectural practices are engineering physical environments optimized for silence and cognitive restoration.\n\n#### Principles of Acoustic Geometry\n\nTo build true silence, simple insulation is insufficient. Architects must shape sound waves.\n\n*   **Negative Reflection:** Utilizing angled walls surfaced with porous micro-slats that swallow sound rather than bouncing it.\n*   **Acoustic Isolation Joints:** Decoupling floor slabs using neoprene padding, effectively isolating the quiet space from building vibrations.\n*   **Biophilic Noise Dampening:** Using dense, humid, vertical moss walls that naturally diffuse high-frequency background noise.\n\n#### Micro-Sanctuaries\n\nFrom public libraries in Stockholm to private residential towers in Tokyo, modular 'solitude cabinets' are appearing. These structures provide clean, dust-filtered, fully sound-insulated environments, proving that silence is not just an absence of noise, but a critical foundation for deep mental focus.",
-      "coverImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
-      "status": "Published",
-      "featured": false,
-      "authorId": "user-writer-7",
-      "categoryId": "lifestyle",
-      "publishedAt": "2026-06-29T08:45:00Z",
-      "createdAt": "2026-06-28T10:00:00Z",
-      "updatedAt": "2026-06-29T08:45:00Z",
-      "readCount": 930,
-      "likeCount": 84,
-      "tags": [
-        "Architecture",
-        "Design",
-        "Acoustics",
-        "Lifestyle",
-        "Minimalism"
-      ],
-      "seoTitle": "Designing Solitude: Acoustic Architecture - MOXN",
-      "seoDescription": "How contemporary architects use biophilic walls, acoustic joints, and geometry to build peaceful sanctuaries in dense urban cities."
-    },
-    {
-      "id": "art-6",
-      "title": "The Geopolitics of Lithium Corridors in South America",
-      "slug": "geopolitics-lithium-corridors-south-america",
-      "subtitle": "A critical examination of trade routes, indigenous resource claims, and multi-national investment blocks.",
-      "body": "### The Golden Triangle under Tension\n\nThe high-altitude salt flats of Chile, Bolivia, and Argentina contain over **50% of the world's known lithium reserves**. As demand for electrochemical storage escalates, this high-altitude region has become a hotbed of geopolitical posturing.\n\nGlobal superpowers are rushing to lock down exclusive extraction agreements, sometimes at the expense of local environmental sustainability.\n\n#### Extraction Economics and Ecological Strain\n\nLithium extraction requires pumping vast quantities of brine from underground aquifers into giant evaporation pools.\n\n1.  **Water Depletion:** One ton of lithium consumes roughly **two million liters of water**, severely lowering local water tables.\n2.  **Soil Contamination:** Chemical runoff poses severe hazards to indigenous agricultural soils.\n3.  **Local Resistance:** Native communities are organizing roadblocks and legal actions to demand fair royalty shares and active water protection.\n\n#### The Strategic Corridors\n\nTo bypass regional logistics bottlenecks, multi-national consortiums are funding a massive trans-Andean railway network. This corridor will move battery-grade lithium carbonate directly to deep-water ports on the Pacific coast, shortening shipment timelines to North American and East Asian manufacturing plants by over ten days.",
-      "coverImage": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&q=80",
-      "status": "Published",
-      "featured": false,
-      "authorId": "user-writer-3",
-      "categoryId": "world",
-      "publishedAt": "2026-06-29T14:20:00Z",
-      "createdAt": "2026-06-28T15:00:00Z",
-      "updatedAt": "2026-06-29T14:20:00Z",
-      "readCount": 1540,
-      "likeCount": 112,
-      "tags": [
-        "Geopolitics",
-        "Lithium",
-        "Climate Change",
-        "Trade",
-        "South America"
-      ],
-      "seoTitle": "South American Lithium Geopolitics - MOXN World",
-      "seoDescription": "An in-depth analysis of high-altitude lithium extraction in Bolivia, Chile, and Argentina, highlighting water rights and trans-Andean trade routes."
-    },
-    {
-      "id": "art-7",
-      "title": "AI and the Future of Intellectual Property Rights",
-      "slug": "ai-future-intellectual-property-rights",
-      "subtitle": "Understanding the legal frameworks surrounding generative model training datasets.",
-      "body": "### The Ownership Paradigm in Neural Networks\n\nWho owns a pixel generated by a network trained on millions of copyrighted images? This question has transitioned from theoretical legal forums into multi-billion dollar courtroom disputes.\n\nAs generative AI models achieve high-fidelity creative replication, the traditional boundaries of Fair Use, Copyright, and Intellectual Property are fracturing.\n\n#### The Core Legal Battlegrounds\n\n*   **Training Intake:** Is scraping public digital assets for neural model training a protected 'fair use' activity or systematic licensing infringement?\n*   **Latent Collateral:** When a model outputs an asset in the distinctive style of a living artist, does that constitute a derivative work?\n*   **Author Attribution:** Current legal doctrines in major jurisdictions require a **human author** to grant intellectual copyright protection. Machine outputs are currently designated as public domain by default.\n\n#### The Licensing Solution\n\nTo avoid terminal litigation, tech platforms are pioneering opt-in licensing repositories, offering artists dividends whenever their works are referenced during generation. This might lay the foundation for a sustainable cooperative economy of synthetic media.",
-      "coverImage": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1200&q=80",
-      "status": "Published",
-      "featured": false,
-      "authorId": "user-writer-1",
+      "likeCount": 294,
+      "createdAt": "2026-06-24T14:30:00Z",
+      "body": "### The Shift in Perceptual Frontiers\n\nFor the past several years, artificial intelligence research has maintained a dominant focus on sequence modeling, primarily text. Large language models (LLMs) proved that next-token prediction can achieve remarkable reasoning approximations. However, true understanding requires sensory convergence.\n\nHuman intelligence does not operate in isolated linguistic blocks. We perceive, cross-reference, and act. This is the genesis of modern Multimodal Architecture.\n\n```typescript\ninterface MultimodalInput {\n  visualFrame: ImageData;\n  telemetryStream: ArrayBuffer;\n  acousticVector: Float32Array;\n}\n```\n\n#### Cross-Attention and Latent Space Fusion\n\nRather than training separate encoders and stitching them together with shallow dense layers, modern networks utilize unified attention spaces. Audio, visual, and text data are projected into a singular, cohesive vector space.\n\n*   **Spatial Temporal Invariance:** Systems can track objects continuously across frames, referencing historical spatial coordinates.\n*   **Acoustic Semantics:** Sound is not just transcribed; pitch, environmental resonance, and emotional tone are parsed concurrently.\n*   **Dynamic Prompting:** The prompt is no longer just words; it is an active state containing real-time sensory feeds.\n\n#### The Next Milestones\n\nWe are heading toward systems that can reason through real-world visual environments in microseconds. Autonomous systems, smart assistive devices, and creative toolkits will transition from reactive agents to highly proactive, co-perceptive collaborators.",
+      "title": "The Next Threshold of Large Multimodal Architecture",
       "categoryId": "tech",
-      "publishedAt": "2026-06-30T05:00:00Z",
-      "createdAt": "2026-06-29T09:00:00Z",
-      "updatedAt": "2026-06-30T05:00:00Z",
-      "readCount": 2780,
-      "likeCount": 204,
-      "tags": [
-        "Artificial Intelligence",
-        "Copyright",
-        "Legal Tech",
-        "Technology"
-      ],
-      "seoTitle": "AI Model Training and Copyright Law - MOXN Tech",
-      "seoDescription": "Exposing the deep legal conflicts of generative AI training databases, human copyright precedents, and licensing registries."
+      "subtitle": "How neural networks are expanding beyond text into real-time perceptual logic and dynamic spatial tracking.",
+      "updatedAt": "2026-06-25T08:00:00Z",
+      "authorId": "user-writer-2"
     },
     {
-      "id": "art-8",
-      "title": "Venture Velocity: Post-Hype Startup Funding Metrics",
-      "slug": "venture-velocity-post-hype-startup-funding-metrics",
-      "subtitle": "Why profitability and cash multipliers have permanently replaced growth-at-all-costs templates.",
-      "body": "### The Return of Capital Discipline\n\nThe era of easy capital is over. For nearly a decade, founders were advised to scale aggressively, burning through millions of dollars to capture early market share. Today, the investment ecosystem demands a return to fundamental corporate economics.\n\nVenture capital firms have updated their investment scoring matrices to prioritize **Venture Velocity** and **Capital Efficiency**.\n\n#### The New Valuation Standards\n\n1.  **Rule of 40 Redefined:** It is no longer just Growth + Margin. Investors are rewarding businesses that hit a sustainable 30% margin with solid 10% organic growth.\n2.  **The Burn Multiple:** Calculated as *Net Burn divided by Net New ARR*. A score below **1.0x** is exceptional, indicating the startup generates ARR efficiently without exhausting cash reserves.\n3.  **LTV to CAC Ratio:** Must exceed **5:1** in enterprise software sectors, supported by rigid contract terms.\n\n#### The Founder's Roadmap\n\nFounders should shift their focus from raising massive rounds to achieving cash-flow break-even within eighteen months of seed funding. This independence is the ultimate leverage in future fundraising negotiations.",
-      "coverImage": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80",
-      "status": "Published",
-      "featured": false,
-      "authorId": "user-writer-4",
-      "categoryId": "business",
-      "publishedAt": "2026-06-30T06:00:00Z",
-      "createdAt": "2026-06-29T10:00:00Z",
-      "updatedAt": "2026-06-30T06:00:00Z",
-      "readCount": 1450,
-      "likeCount": 118,
-      "tags": [
-        "Venture Capital",
-        "Business Strategy",
-        "Startups",
-        "Economics"
-      ],
-      "seoTitle": "Post-Hype Startup Funding Metrics - MOXN Business",
-      "seoDescription": "How the investment ecosystem is replacing user-acquisition hype with capital efficiency, burn multiples, and sustainable cash flows."
-    },
-    {
-      "id": "art-9",
-      "title": "The Architecture of Neural Co-Processors in Mobile Silicon",
-      "slug": "architecture-neural-co-processors-mobile-silicon",
-      "subtitle": "A technical walkthrough of memory bus widths and local on-chip execution efficiency.",
-      "body": "### Local Computing on Pocket Silicons\n\nIntegrating deep learning execution pipelines on pocket devices requires major silicon reconsiderations. Standard CPU microarchitectures excel at linear tasks, and GPUs dominate wide parallel execution. But neural models need highly specialized mathematical execution.\n\nThis is the purpose of the modern NPU (Neural Processing Unit).\n\n#### SRAM Buffers and Memory Bandwidth\n\nTo minimize battery drain, models cannot frequently access off-chip LPDDR5 memory. Every gigabyte of data moved across the mother board consumes vital milliwatts.\n\n*   **Near-Memory Computing:** NPUs utilize dedicated high-speed SRAM caches directly adjacent to mathematical arrays.\n*   **Quantization Scaling:** Running 4-bit and 8-bit integer weights instead of heavy 32-bit floats, reducing memory footprint by **75%** with minimal precision loss.\n*   **Asynchronous Compute Pipelines:** Simultaneously running facial recognition, voice synthesis, and real-time noise reduction without taxing CPU resources.\n\n#### Emerging Architectures\n\nThe next generation of NPUs will integrate analog compute arrays that simulate physical synaptic conductance, paving the way for ultra-low-power, always-on context-aware mobile software.",
-      "coverImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
-      "status": "In Review",
-      "featured": false,
-      "authorId": "user-writer-1",
-      "categoryId": "tech",
-      "createdAt": "2026-06-29T11:00:00Z",
-      "updatedAt": "2026-06-29T11:00:00Z",
-      "readCount": 0,
-      "likeCount": 0,
-      "tags": [
-        "Silicon Design",
-        "NPU",
-        "Hardware",
-        "Technology"
-      ]
-    },
-    {
-      "id": "art-10",
-      "title": "Evolving Educational Delivery: The Pedagogy of VR Lab Cohorts",
-      "slug": "evolving-educational-delivery-pedagogy-vr-lab-cohorts",
-      "subtitle": "How virtual lab spaces are leveling the playing field for remote medical and chemistry studies.",
-      "body": "### Overcoming Physical Constraints in STEM Education\n\nAcquiring high-end laboratory gear is a major cost barrier for educational institutions globally. Chemistry, molecular biology, and surgical medicine require hands-on manipulation, which traditional online formats cannot replicate.\n\nInteractive VR lab simulations are proving to be a highly effective pedagogical solution.\n\n#### Immersive Kinetic Learning\n\nBy utilizing spatial controllers and physical tracking, students can manipulate molecular lattices or perform simulated surgeries in real-time.\n\n*   **Zero Marginal Cost:** Reagents, vacuum hoods, and surgical equipment can be instantiated infinitely.\n*   **Perfect Safety:** Students can safely observe highly volatile chemical reactions or practice complex cardiovascular surgeries with no physical risk.\n*   **Tactile Synchronization:** Haptic spatial controllers simulate the resistive force of surgical incisions or micropipette extractions.\n\n#### Institutional Efficacy\n\nA study of 500 remote biology students showed that cohorts utilizing VR laboratory simulations scored **18% higher** on standard clinical assessments than those relying purely on text and video instruction. This indicates immersive virtual spaces are ready to transition from novelty into central educational infrastructure.",
-      "coverImage": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=1200&q=80",
-      "status": "In Review",
-      "featured": false,
       "authorId": "user-writer-2",
-      "categoryId": "edu",
-      "createdAt": "2026-06-29T15:30:00Z",
       "updatedAt": "2026-06-29T15:30:00Z",
-      "readCount": 0,
+      "subtitle": "How virtual lab spaces are leveling the playing field for remote medical and chemistry studies.",
+      "categoryId": "edu",
+      "body": "### Overcoming Physical Constraints in STEM Education\n\nAcquiring high-end laboratory gear is a major cost barrier for educational institutions globally. Chemistry, molecular biology, and surgical medicine require hands-on manipulation, which traditional online formats cannot replicate.\n\nInteractive VR lab simulations are proving to be a highly effective pedagogical solution.\n\n#### Immersive Kinetic Learning\n\nBy utilizing spatial controllers and physical tracking, students can manipulate molecular lattices or perform simulated surgeries in real-time.\n\n*   **Zero Marginal Cost:** Reagents, vacuum hoods, and surgical equipment can be instantiated infinitely.\n*   **Perfect Safety:** Students can safely observe highly volatile chemical reactions or practice complex cardiovascular surgeries with no physical risk.\n*   **Tactile Synchronization:** Haptic spatial controllers simulate the resistive force of surgical incisions or micropipette extractions.\n\n#### Institutional Efficacy\n\nA study of 500 remote biology students showed that cohorts utilizing VR laboratory simulations scored **18% higher** on standard clinical assessments than those relying purely on text and video instruction. This indicates immersive virtual spaces are ready to transition from novelty into central educational infrastructure.",
+      "title": "Evolving Educational Delivery: The Pedagogy of VR Lab Cohorts",
       "likeCount": 0,
+      "featured": false,
+      "createdAt": "2026-06-29T15:30:00Z",
+      "coverImage": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=1200&q=80",
+      "readCount": 0,
+      "status": "In Review",
+      "slug": "evolving-educational-delivery-pedagogy-vr-lab-cohorts",
+      "id": "art-10",
       "tags": [
         "Education",
         "Virtual Reality",
@@ -370,233 +279,1172 @@
       ]
     },
     {
-      "id": "art-11",
-      "title": "The Epigenetics of Circadian Eating Schedules",
-      "slug": "epigenetics-circadian-eating-schedules",
-      "subtitle": "Investigating how insulin sensitivity and cellular repair mechanisms align with metabolic clocks.",
-      "body": "### Synchronizing Nutrition and Biology\n\nOur bodies operate on a rigorous 24-hour cycle governed by the master clock in the brain. However, recent metabolic studies reveal that peripheral tissues—like the liver, pancreas, and muscle—contain their own localized circadian clocks.\n\nConsuming nutrients outside of optimal circadian windows can disrupt these clocks, leading to metabolic friction.\n\n#### Metabolic Timing and Insulin Fluctuations\n\n*   **Early Insulin Efficiency:** Studies show the body's insulin response is significantly more efficient during daylight hours.\n*   **Nighttime Autophagy:** Restricting food intake to a **10-hour window** triggers cellular autophagy and mitochondrial repair during the night.\n*   **Gene Expression Profiles:** Circadian nutrition regulates several metabolic genes, protecting against chronic lipid storage and arterial inflammation.\n\n#### Practical Application\n\nA simple schedule—finishing dinner before sunset and fasting for 14 hours—aligns physical digestion with natural evolutionary biology, maximizing overall mitochondrial efficiency and daytime energy levels.",
-      "coverImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80",
-      "status": "Draft",
-      "featured": false,
-      "authorId": "user-writer-9",
-      "categoryId": "health",
-      "createdAt": "2026-06-30T01:00:00Z",
-      "updatedAt": "2026-06-30T01:00:00Z",
-      "readCount": 0,
-      "likeCount": 0,
       "tags": [
         "Circadian Rhythm",
         "Nutrition",
         "Longevity",
         "Health"
-      ]
+      ],
+      "id": "art-11",
+      "slug": "epigenetics-circadian-eating-schedules",
+      "status": "Draft",
+      "readCount": 0,
+      "coverImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80",
+      "createdAt": "2026-06-30T01:00:00Z",
+      "likeCount": 0,
+      "featured": false,
+      "title": "The Epigenetics of Circadian Eating Schedules",
+      "body": "### Synchronizing Nutrition and Biology\n\nOur bodies operate on a rigorous 24-hour cycle governed by the master clock in the brain. However, recent metabolic studies reveal that peripheral tissues—like the liver, pancreas, and muscle—contain their own localized circadian clocks.\n\nConsuming nutrients outside of optimal circadian windows can disrupt these clocks, leading to metabolic friction.\n\n#### Metabolic Timing and Insulin Fluctuations\n\n*   **Early Insulin Efficiency:** Studies show the body's insulin response is significantly more efficient during daylight hours.\n*   **Nighttime Autophagy:** Restricting food intake to a **10-hour window** triggers cellular autophagy and mitochondrial repair during the night.\n*   **Gene Expression Profiles:** Circadian nutrition regulates several metabolic genes, protecting against chronic lipid storage and arterial inflammation.\n\n#### Practical Application\n\nA simple schedule—finishing dinner before sunset and fasting for 14 hours—aligns physical digestion with natural evolutionary biology, maximizing overall mitochondrial efficiency and daytime energy levels.",
+      "categoryId": "health",
+      "subtitle": "Investigating how insulin sensitivity and cellular repair mechanisms align with metabolic clocks.",
+      "authorId": "user-writer-9",
+      "updatedAt": "2026-06-30T01:00:00Z"
     },
     {
-      "id": "art-12",
-      "title": "The Evolution of Minimalist Typography in Digital Formats",
-      "slug": "evolution-minimalist-typography-digital-formats",
+      "updatedAt": "2026-06-30T03:00:00Z",
+      "authorId": "user-writer-7",
       "subtitle": "How pixel densities and system UI fonts reshaped digital interface typography.",
+      "categoryId": "lifestyle",
+      "title": "The Evolution of Minimalist Typography in Digital Formats",
       "body": "### The Transition from Print to Responsive Screens\n\nIn print design, physical layout is absolute. In digital interface design, type is highly fluid, scaling across different screen sizes, aspect ratios, and pixel densities. This fluid reality prompted the rise of minimalist digital typography.\n\n#### System UI Fonts and Screen Readability\n\nTo optimize loading speeds, platforms bypassed heavy custom font payloads in favor of highly optimized system fonts like San Francisco and Segoe UI.\n\n*   **Subtle Optical Scaling:** Modern digital fonts automatically adjust spacing and weight depending on display size.\n*   **High-Contrast Rendering:** Letters are designed with open shapes and clean geometric curves to remain highly readable even at small sizes.\n*   **The Anti-Decoration Trend:** Eliminating unnecessary flourishes to prioritize immediate content layout.\n\n#### Modern Editorial Type Pairings\n\nThe premium editorial experience combines clean system fonts for interface navigation with elegant, high-contrast serif headlines for long-form reading, offering a balanced mix of speed and visual sophistication.",
+      "createdAt": "2026-06-30T03:00:00Z",
+      "featured": false,
+      "likeCount": 0,
       "coverImage": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=1200&q=80",
       "status": "Draft",
-      "featured": false,
-      "authorId": "user-writer-7",
-      "categoryId": "lifestyle",
-      "createdAt": "2026-06-30T03:00:00Z",
-      "updatedAt": "2026-06-30T03:00:00Z",
       "readCount": 0,
-      "likeCount": 0,
+      "id": "art-12",
       "tags": [
         "Typography",
         "Design",
         "Product Design",
         "Lifestyle"
-      ]
+      ],
+      "slug": "evolution-minimalist-typography-digital-formats"
     },
     {
-      "id": "art-13",
-      "title": "10 Cryptocurrencies to Buy Right Now for Massive Gains",
-      "slug": "10-cryptocurrencies-to-buy-right-now-massive-gains",
-      "subtitle": "Why these token assets are guaranteed to explode next week.",
-      "body": "### Quick Profits in Digital Finance\n\nIf you want to retire early, you need to invest in these emerging altcoins immediately. These high-yield tokens are positioned for parabolic growth, backed by social media momentum and innovative meme utility.\n\n#### Top Assets to Watch\n\n1.  **DogeRocket:** A community-driven token with massive potential.\n2.  **SolMoon:** Leveraged liquidity protocols on high-speed chains.\n3.  **AlphaGains:** An algorithmic yield aggregator with automated leverage.\n\nDon't wait for institutional validation. Invest your savings now to ride the wave to financial independence.",
-      "coverImage": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=1200&q=80",
       "status": "Rejected",
-      "featured": false,
-      "authorId": "user-writer-8",
-      "categoryId": "business",
-      "createdAt": "2026-06-28T14:00:00Z",
-      "updatedAt": "2026-06-29T10:00:00Z",
       "readCount": 0,
-      "likeCount": 0,
-      "rejectReason": "This submission reads like a speculative promotional pitch with unsubstantiated claims. MOXN enforces strict editorial guidelines: we do not publish speculative financial advice, hyper-speculative asset promotional articles, or clickbait listicles. Please revise to focus on objective macroeconomic modeling or structured regulatory developments in digital finance.",
       "tags": [
         "Cryptocurrency",
         "Altcoins",
         "Finance"
-      ]
+      ],
+      "id": "art-13",
+      "slug": "10-cryptocurrencies-to-buy-right-now-massive-gains",
+      "createdAt": "2026-06-28T14:00:00Z",
+      "likeCount": 0,
+      "featured": false,
+      "coverImage": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=1200&q=80",
+      "categoryId": "business",
+      "title": "10 Cryptocurrencies to Buy Right Now for Massive Gains",
+      "body": "### Quick Profits in Digital Finance\n\nIf you want to retire early, you need to invest in these emerging altcoins immediately. These high-yield tokens are positioned for parabolic growth, backed by social media momentum and innovative meme utility.\n\n#### Top Assets to Watch\n\n1.  **DogeRocket:** A community-driven token with massive potential.\n2.  **SolMoon:** Leveraged liquidity protocols on high-speed chains.\n3.  **AlphaGains:** An algorithmic yield aggregator with automated leverage.\n\nDon't wait for institutional validation. Invest your savings now to ride the wave to financial independence.",
+      "rejectReason": "This submission reads like a speculative promotional pitch with unsubstantiated claims. MOXN enforces strict editorial guidelines: we do not publish speculative financial advice, hyper-speculative asset promotional articles, or clickbait listicles. Please revise to focus on objective macroeconomic modeling or structured regulatory developments in digital finance.",
+      "authorId": "user-writer-8",
+      "updatedAt": "2026-06-29T10:00:00Z",
+      "subtitle": "Why these token assets are guaranteed to explode next week."
+    },
+    {
+      "status": "Published",
+      "readCount": 1850,
+      "seoTitle": "Quantum Decoupling and Entanglement - MOXN Science",
+      "slug": "quantum-decoupling-absolute-entanglement",
+      "id": "art-2",
+      "tags": [
+        "Quantum Computing",
+        "Physics",
+        "Cryogenics",
+        "Science"
+      ],
+      "likeCount": 154,
+      "featured": true,
+      "createdAt": "2026-06-25T11:00:00Z",
+      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80",
+      "seoDescription": "Examining superconducting transmon qubits, 10mK cryogenic cooling, and the roadmap to absolute quantum entanglement in security systems.",
+      "publishedAt": "2026-06-26T10:00:00Z",
+      "categoryId": "science",
+      "body": "### Macroscopic Coherence Under Scrutiny\n\nIn quantum mechanics, environmental noise is the absolute enemy. Decoupling a physical qubit from electromagnetic fluctuations, thermal energy, and gravity is a major engineering hurdle.\n\nRecent experiments at the CERN Cryogenics Facility have pushed superconducting transmon qubits to unprecedented coherence times. \n\n#### Cryogenic Vacuum Engineering\n\nBy reducing operational temperatures to **10 millikelvin** (colder than interstellar space), researchers isolated a grid of forty qubits for over 300 seconds.\n\n1.  **Thermal Isolation:** Utilizing multi-stage dilution refrigerators.\n2.  **Magnetic Shielding:** Active mumetal casings blocking Earth's magnetic fields.\n3.  **Radio Frequency Filtration:** High-density coaxial attenuators dampening stray photons.\n\n#### What Lies Ahead?\n\nIf macroscopic entanglement can survive outside cryogenic chambers, the computational capacity of modern cryptography would be upended. Quantum Key Distribution (QKD) would become the global default for secure networking, making intercept-based eavesdropping theoretically impossible.",
+      "title": "Quantum Decoupling and the Search for Absolute Entanglement",
+      "authorId": "user-writer-5",
+      "updatedAt": "2026-06-26T10:00:00Z",
+      "subtitle": "A detailed investigation of cryogenic stability chambers and macroscopic quantum coherence limits."
+    },
+    {
+      "categoryId": "business",
+      "title": "The Silent Transformation of Global Micro-Grid Infrastructure",
+      "body": "### The Collapse of the Central Grid Paradigm\n\nFor over a century, power generation relied on massive, high-voltage transmission lines connecting distant generating plants to urban consumer hubs. But rising grid vulnerability—from extreme weather to deliberate infrastructure attacks—has accelerated a structural shift.\n\nEnter **Micro-Grids**: self-contained localized power grids that can detach from the regional utility seamlessly.\n\n#### Algorithmic Load Balancing\n\nModern micro-grids are not just panels and batteries. They run specialized machine learning workloads that predict power demand, adjust solar-battery reserves, and trade surplus electricity with neighbors on real-time micro-markets.\n\n*   **Islanding Speed:** The transition from grid-tied to isolated mode takes less than **16 milliseconds**.\n*   **Resource Diversity:** Combining hydrogen fuel cells, rooftop photovoltaics, and recycled electric vehicle battery packs.\n*   **Democratic Pricing:** Smart contracts facilitating direct peer-to-peer billing without utility markup.\n\n#### Regional Case Studies\n\nIn rural Saxony, Germany, a community-owned micro-grid achieved 100% autonomy throughout the winter of 2025, operating entirely on localized solar-hydrogen synthesis. This template is currently being adapted across vulnerable Pacific islands and North American manufacturing corridors.",
+      "authorId": "user-writer-4",
+      "updatedAt": "2026-06-27T09:15:00Z",
+      "subtitle": "Decentralized energy distribution is quietly outpacing centralized grid reliability in major industrial sectors.",
+      "readCount": 1240,
+      "status": "Published",
+      "id": "art-3",
+      "tags": [
+        "Clean Energy",
+        "Infrastructure",
+        "Economics",
+        "Micro-grids"
+      ],
+      "seoTitle": "Global Micro-Grid Energy Disruption - MOXN Business",
+      "slug": "silent-transformation-global-micro-grid-infrastructure",
+      "createdAt": "2026-06-26T14:00:00Z",
+      "likeCount": 99,
+      "featured": false,
+      "seoDescription": "How algorithmic local power grids are shifting energy generation away from centralized utilities through peer-to-peer markets.",
+      "publishedAt": "2026-06-27T09:15:00Z",
+      "coverImage": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80"
+    },
+    {
+      "categoryId": "health",
+      "title": "Vascular Aging: Reversing Cellular Stiffness through Biotech",
+      "body": "### The Arterial Rigidity Matrix\n\nVascular stiffness is a hallmark of human aging. As arterial walls accumulate fibrotic tissue and calcified deposits, elasticity declines, leading to chronic blood pressure strain.\n\nRecent laboratory investigations at the Lausanne Institute of Biotech have discovered a specific peptide, **TX-402**, which induces targeted autophagy of senescent vascular cells.\n\n#### The TX-402 Protocol\n\nBy selectively purging cells that have entered cell-cycle arrest (senescent cells), the peptide rejuvenates the extracellular matrix of the aorta.\n\n*   **Elastin Regeneration:** Clinical monitors showed a **22% increase** in arterial elastin density over 6 months.\n*   **Calcification Clearance:** Micro-calcium plaques were safely dissolved and metabolized.\n*   **Endothelial Function:** Nitric oxide production—which prompts blood vessel relaxation—was restored to youthful baselines.\n\n#### Safety and Scalability\n\nWhile human trials are currently restricted to Phase II, the cardiovascular profiles of test subjects have demonstrated no off-target toxicity. This represents one of the most promising vectors for therapeutic life-span extensions.",
+      "authorId": "user-writer-9",
+      "updatedAt": "2026-06-28T07:30:00Z",
+      "subtitle": "New clinical trials targeting senolytic clearance in arterial tissue show promising arterial age reversal.",
+      "readCount": 2210,
+      "status": "Published",
+      "tags": [
+        "Biotech",
+        "Longevity",
+        "Cardiovascular",
+        "Medicine"
+      ],
+      "id": "art-4",
+      "seoTitle": "Reversing Vascular Stiffness and Arterial Aging - MOXN",
+      "slug": "vascular-aging-reversing-cellular-stiffness-biotech",
+      "createdAt": "2026-06-27T08:00:00Z",
+      "likeCount": 176,
+      "featured": false,
+      "seoDescription": "A deep dive into peptide TX-402 clinical trials targeting cellular senescence to restore vascular elasticity and elastin density.",
+      "publishedAt": "2026-06-28T07:30:00Z",
+      "coverImage": "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80"
+    },
+    {
+      "createdAt": "2026-06-28T10:00:00Z",
+      "likeCount": 84,
+      "featured": false,
+      "seoDescription": "How contemporary architects use biophilic walls, acoustic joints, and geometry to build peaceful sanctuaries in dense urban cities.",
+      "publishedAt": "2026-06-29T08:45:00Z",
+      "coverImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+      "readCount": 930,
+      "status": "Published",
+      "id": "art-5",
+      "tags": [
+        "Architecture",
+        "Design",
+        "Acoustics",
+        "Lifestyle",
+        "Minimalism"
+      ],
+      "seoTitle": "Designing Solitude: Acoustic Architecture - MOXN",
+      "slug": "designing-for-solitude-architecture-quiet-spaces",
+      "authorId": "user-writer-7",
+      "updatedAt": "2026-06-29T08:45:00Z",
+      "subtitle": "How contemporary urban architects are pushing back against open-plan noise with modular acoustic cells.",
+      "categoryId": "lifestyle",
+      "title": "Designing for Solitude: The Architecture of Quiet Spaces",
+      "body": "### The Tyranny of Constant Connection\n\nWe live in a world of inescapable audio stimulus. From public transport alerts to the ambient buzz of corporate open-plan layouts, quiet has become a rare luxury. \n\nRecognizing this, progressive architectural practices are engineering physical environments optimized for silence and cognitive restoration.\n\n#### Principles of Acoustic Geometry\n\nTo build true silence, simple insulation is insufficient. Architects must shape sound waves.\n\n*   **Negative Reflection:** Utilizing angled walls surfaced with porous micro-slats that swallow sound rather than bouncing it.\n*   **Acoustic Isolation Joints:** Decoupling floor slabs using neoprene padding, effectively isolating the quiet space from building vibrations.\n*   **Biophilic Noise Dampening:** Using dense, humid, vertical moss walls that naturally diffuse high-frequency background noise.\n\n#### Micro-Sanctuaries\n\nFrom public libraries in Stockholm to private residential towers in Tokyo, modular 'solitude cabinets' are appearing. These structures provide clean, dust-filtered, fully sound-insulated environments, proving that silence is not just an absence of noise, but a critical foundation for deep mental focus."
+    },
+    {
+      "subtitle": "A critical examination of trade routes, indigenous resource claims, and multi-national investment blocks.",
+      "authorId": "user-writer-3",
+      "updatedAt": "2026-06-29T14:20:00Z",
+      "body": "### The Golden Triangle under Tension\n\nThe high-altitude salt flats of Chile, Bolivia, and Argentina contain over **50% of the world's known lithium reserves**. As demand for electrochemical storage escalates, this high-altitude region has become a hotbed of geopolitical posturing.\n\nGlobal superpowers are rushing to lock down exclusive extraction agreements, sometimes at the expense of local environmental sustainability.\n\n#### Extraction Economics and Ecological Strain\n\nLithium extraction requires pumping vast quantities of brine from underground aquifers into giant evaporation pools.\n\n1.  **Water Depletion:** One ton of lithium consumes roughly **two million liters of water**, severely lowering local water tables.\n2.  **Soil Contamination:** Chemical runoff poses severe hazards to indigenous agricultural soils.\n3.  **Local Resistance:** Native communities are organizing roadblocks and legal actions to demand fair royalty shares and active water protection.\n\n#### The Strategic Corridors\n\nTo bypass regional logistics bottlenecks, multi-national consortiums are funding a massive trans-Andean railway network. This corridor will move battery-grade lithium carbonate directly to deep-water ports on the Pacific coast, shortening shipment timelines to North American and East Asian manufacturing plants by over ten days.",
+      "title": "The Geopolitics of Lithium Corridors in South America",
+      "categoryId": "world",
+      "coverImage": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&q=80",
+      "seoDescription": "An in-depth analysis of high-altitude lithium extraction in Bolivia, Chile, and Argentina, highlighting water rights and trans-Andean trade routes.",
+      "publishedAt": "2026-06-29T14:20:00Z",
+      "likeCount": 112,
+      "featured": false,
+      "createdAt": "2026-06-28T15:00:00Z",
+      "seoTitle": "South American Lithium Geopolitics - MOXN World",
+      "slug": "geopolitics-lithium-corridors-south-america",
+      "tags": [
+        "Geopolitics",
+        "Lithium",
+        "Climate Change",
+        "Trade",
+        "South America"
+      ],
+      "id": "art-6",
+      "status": "Published",
+      "readCount": 1541
+    },
+    {
+      "publishedAt": "2026-06-30T05:00:00Z",
+      "seoDescription": "Exposing the deep legal conflicts of generative AI training databases, human copyright precedents, and licensing registries.",
+      "coverImage": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1200&q=80",
+      "createdAt": "2026-06-29T09:00:00Z",
+      "featured": false,
+      "likeCount": 206,
+      "id": "art-7",
+      "tags": [
+        "Artificial Intelligence",
+        "Copyright",
+        "Legal Tech",
+        "Technology"
+      ],
+      "slug": "ai-future-intellectual-property-rights",
+      "seoTitle": "AI Model Training and Copyright Law - MOXN Tech",
+      "status": "Published",
+      "readCount": 2780,
+      "subtitle": "Understanding the legal frameworks surrounding generative model training datasets.",
+      "updatedAt": "2026-06-30T05:00:00Z",
+      "authorId": "user-writer-1",
+      "title": "AI and the Future of Intellectual Property Rights",
+      "body": "### The Ownership Paradigm in Neural Networks\n\nWho owns a pixel generated by a network trained on millions of copyrighted images? This question has transitioned from theoretical legal forums into multi-billion dollar courtroom disputes.\n\nAs generative AI models achieve high-fidelity creative replication, the traditional boundaries of Fair Use, Copyright, and Intellectual Property are fracturing.\n\n#### The Core Legal Battlegrounds\n\n*   **Training Intake:** Is scraping public digital assets for neural model training a protected 'fair use' activity or systematic licensing infringement?\n*   **Latent Collateral:** When a model outputs an asset in the distinctive style of a living artist, does that constitute a derivative work?\n*   **Author Attribution:** Current legal doctrines in major jurisdictions require a **human author** to grant intellectual copyright protection. Machine outputs are currently designated as public domain by default.\n\n#### The Licensing Solution\n\nTo avoid terminal litigation, tech platforms are pioneering opt-in licensing repositories, offering artists dividends whenever their works are referenced during generation. This might lay the foundation for a sustainable cooperative economy of synthetic media.",
+      "categoryId": "tech"
+    },
+    {
+      "likeCount": 119,
+      "featured": false,
+      "createdAt": "2026-06-29T10:00:00Z",
+      "coverImage": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80",
+      "seoDescription": "How the investment ecosystem is replacing user-acquisition hype with capital efficiency, burn multiples, and sustainable cash flows.",
+      "publishedAt": "2026-06-30T06:00:00Z",
+      "status": "Published",
+      "readCount": 1450,
+      "seoTitle": "Post-Hype Startup Funding Metrics - MOXN Business",
+      "slug": "venture-velocity-post-hype-startup-funding-metrics",
+      "id": "art-8",
+      "tags": [
+        "Venture Capital",
+        "Business Strategy",
+        "Startups",
+        "Economics"
+      ],
+      "authorId": "user-writer-4",
+      "updatedAt": "2026-06-30T06:00:00Z",
+      "subtitle": "Why profitability and cash multipliers have permanently replaced growth-at-all-costs templates.",
+      "categoryId": "business",
+      "body": "### The Return of Capital Discipline\n\nThe era of easy capital is over. For nearly a decade, founders were advised to scale aggressively, burning through millions of dollars to capture early market share. Today, the investment ecosystem demands a return to fundamental corporate economics.\n\nVenture capital firms have updated their investment scoring matrices to prioritize **Venture Velocity** and **Capital Efficiency**.\n\n#### The New Valuation Standards\n\n1.  **Rule of 40 Redefined:** It is no longer just Growth + Margin. Investors are rewarding businesses that hit a sustainable 30% margin with solid 10% organic growth.\n2.  **The Burn Multiple:** Calculated as *Net Burn divided by Net New ARR*. A score below **1.0x** is exceptional, indicating the startup generates ARR efficiently without exhausting cash reserves.\n3.  **LTV to CAC Ratio:** Must exceed **5:1** in enterprise software sectors, supported by rigid contract terms.\n\n#### The Founder's Roadmap\n\nFounders should shift their focus from raising massive rounds to achieving cash-flow break-even within eighteen months of seed funding. This independence is the ultimate leverage in future fundraising negotiations.",
+      "title": "Venture Velocity: Post-Hype Startup Funding Metrics"
+    },
+    {
+      "createdAt": "2026-06-29T11:00:00Z",
+      "likeCount": 0,
+      "featured": false,
+      "coverImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
+      "readCount": 0,
+      "status": "In Review",
+      "tags": [
+        "Silicon Design",
+        "NPU",
+        "Hardware",
+        "Technology"
+      ],
+      "id": "art-9",
+      "slug": "architecture-neural-co-processors-mobile-silicon",
+      "authorId": "user-writer-1",
+      "updatedAt": "2026-06-29T11:00:00Z",
+      "subtitle": "A technical walkthrough of memory bus widths and local on-chip execution efficiency.",
+      "categoryId": "tech",
+      "title": "The Architecture of Neural Co-Processors in Mobile Silicon",
+      "body": "### Local Computing on Pocket Silicons\n\nIntegrating deep learning execution pipelines on pocket devices requires major silicon reconsiderations. Standard CPU microarchitectures excel at linear tasks, and GPUs dominate wide parallel execution. But neural models need highly specialized mathematical execution.\n\nThis is the purpose of the modern NPU (Neural Processing Unit).\n\n#### SRAM Buffers and Memory Bandwidth\n\nTo minimize battery drain, models cannot frequently access off-chip LPDDR5 memory. Every gigabyte of data moved across the mother board consumes vital milliwatts.\n\n*   **Near-Memory Computing:** NPUs utilize dedicated high-speed SRAM caches directly adjacent to mathematical arrays.\n*   **Quantization Scaling:** Running 4-bit and 8-bit integer weights instead of heavy 32-bit floats, reducing memory footprint by **75%** with minimal precision loss.\n*   **Asynchronous Compute Pipelines:** Simultaneously running facial recognition, voice synthesis, and real-time noise reduction without taxing CPU resources.\n\n#### Emerging Architectures\n\nThe next generation of NPUs will integrate analog compute arrays that simulate physical synaptic conductance, paving the way for ultra-low-power, always-on context-aware mobile software."
     }
   ],
   "categories": [
     {
-      "id": "tech",
-      "name": "Technology",
-      "slug": "technology",
-      "description": "Computing, artificial intelligence, security, and consumer electronics."
-    },
-    {
-      "id": "business",
-      "name": "Business",
       "slug": "business",
-      "description": "Startups, economics, finance, venture capital, and market analysis."
-    },
-    {
-      "id": "politics",
-      "name": "Politics",
-      "slug": "politics",
-      "description": "Government, democracy, international relations, and global policies."
-    },
-    {
-      "id": "sports",
-      "name": "Sports",
-      "slug": "sports",
-      "description": "Professional athletic events, analysis, tournaments, and athlete profiles."
-    },
-    {
-      "id": "ent",
-      "name": "Entertainment",
-      "slug": "entertainment",
-      "description": "Movies, digital streaming, gaming, pop culture, and music."
-    },
-    {
-      "id": "science",
-      "name": "Science",
-      "slug": "science",
-      "description": "Physics, space exploration, nanotechnology, and natural phenomena."
-    },
-    {
-      "id": "health",
-      "name": "Health",
-      "slug": "health",
-      "description": "Wellness, biotech, mental health, medicine, and nutritional science."
+      "name": "Business",
+      "description": "Startups, economics, finance, venture capital, and market analysis.",
+      "id": "business"
     },
     {
       "id": "edu",
+      "description": "Modern pedagogy, university research, online learning, and student life.",
       "name": "Education",
-      "slug": "education",
-      "description": "Modern pedagogy, university research, online learning, and student life."
+      "slug": "education"
+    },
+    {
+      "id": "ent",
+      "slug": "entertainment",
+      "name": "Entertainment",
+      "description": "Movies, digital streaming, gaming, pop culture, and music."
+    },
+    {
+      "id": "health",
+      "description": "Wellness, biotech, mental health, medicine, and nutritional science.",
+      "name": "Health",
+      "slug": "health"
     },
     {
       "id": "lifestyle",
       "name": "Lifestyle",
-      "slug": "lifestyle",
-      "description": "Travel, gastronomy, wellness trends, home design, and modern living."
+      "description": "Travel, gastronomy, wellness trends, home design, and modern living.",
+      "slug": "lifestyle"
     },
     {
-      "id": "world",
+      "id": "politics",
+      "slug": "politics",
+      "name": "Politics",
+      "description": "Government, democracy, international relations, and global policies."
+    },
+    {
+      "slug": "science",
+      "description": "Physics, space exploration, nanotechnology, and natural phenomena.",
+      "name": "Science",
+      "id": "science"
+    },
+    {
+      "id": "sports",
+      "slug": "sports",
+      "description": "Professional athletic events, analysis, tournaments, and athlete profiles.",
+      "name": "Sports"
+    },
+    {
+      "slug": "technology",
+      "description": "Computing, artificial intelligence, security, and consumer electronics.",
+      "name": "Technology",
+      "id": "tech"
+    },
+    {
+      "description": "Global dispatches, humanitarian updates, and ecological developments.",
       "name": "World",
       "slug": "world",
-      "description": "Global dispatches, humanitarian updates, and ecological developments."
+      "id": "world"
     }
   ],
   "comments": [
     {
-      "id": "comm-1",
-      "body": "Excellent overview, Sarah. The separation of training intake from fair-use is the true legal battlefield. I wonder if we will see a licensing cartel emerge soon.",
+      "likeCount": 12,
       "articleId": "art-1",
       "authorId": "user-writer-4",
       "status": "Active",
       "createdAt": "2026-06-25T10:00:00Z",
-      "likeCount": 12,
-      "pinned": true
+      "pinned": true,
+      "body": "Excellent overview, Sarah. The separation of training intake from fair-use is the true legal battlefield. I wonder if we will see a licensing cartel emerge soon.",
+      "id": "comm-1"
     },
     {
+      "pinned": false,
+      "parentId": "comm-1",
+      "authorId": "user-writer-1",
+      "createdAt": "2026-06-25T10:30:00Z",
+      "likeCount": 5,
       "id": "comm-2",
       "body": "Agreed. Multi-billion dollar licensing blocks are already forming. Individual creators might get squeezed out unless collective representation is standardized.",
       "articleId": "art-1",
-      "authorId": "user-writer-1",
-      "parentId": "comm-1",
-      "status": "Active",
-      "createdAt": "2026-06-25T10:30:00Z",
-      "likeCount": 5,
-      "pinned": false
+      "status": "Active"
     },
     {
-      "id": "comm-3",
-      "body": "10 millikelvin is absolutely mind-blowing. It's almost absolute zero! The engineering required to prevent thermal leak at that level is incredible.",
+      "likeCount": 8,
       "articleId": "art-2",
       "authorId": "user-writer-2",
       "status": "Active",
       "createdAt": "2026-06-26T12:00:00Z",
-      "likeCount": 8,
-      "pinned": false
+      "pinned": false,
+      "body": "10 millikelvin is absolutely mind-blowing. It's almost absolute zero! The engineering required to prevent thermal leak at that level is incredible.",
+      "id": "comm-3"
     },
     {
-      "id": "comm-4",
       "body": "The 16 millisecond islanding speed is impressive. Central utilities will need to adapt to microgrid partners or face complete obsolescence.",
-      "articleId": "art-3",
-      "authorId": "user-writer-8",
-      "status": "Active",
-      "createdAt": "2026-06-27T11:00:00Z",
+      "pinned": false,
+      "id": "comm-4",
       "likeCount": 14,
-      "pinned": false
+      "createdAt": "2026-06-27T11:00:00Z",
+      "status": "Active",
+      "authorId": "user-writer-8",
+      "articleId": "art-3"
     }
   ],
   "bookmarks": [
     {
-      "userId": "user-editor",
-      "articleId": "art-1",
-      "createdAt": "2026-06-25T12:00:00Z"
+      "createdAt": "2026-07-04T21:42:32.381Z",
+      "articleId": "art-6",
+      "userId": "guest"
     },
     {
-      "userId": "user-writer-1",
+      "createdAt": "2026-07-04T06:09:10.599Z",
+      "userId": "user-1783105629479",
+      "articleId": "art-3"
+    },
+    {
+      "articleId": "art-5",
+      "userId": "user-1783145709270",
+      "createdAt": "2026-07-04T06:17:02.762Z"
+    },
+    {
+      "articleId": "art-6",
+      "userId": "user-1783145709270",
+      "createdAt": "2026-07-05T16:39:03.148Z"
+    },
+    {
+      "userId": "user-1783269673454",
       "articleId": "art-2",
+      "createdAt": "2026-07-16T00:03:35.434Z"
+    },
+    {
+      "articleId": "art-4",
+      "userId": "user-1783269673454",
+      "createdAt": "2026-07-16T06:12:43.927Z"
+    },
+    {
+      "createdAt": "2026-07-17T14:11:06.584Z",
+      "userId": "user-1783269673454",
+      "articleId": "art-5"
+    },
+    {
+      "articleId": "art-6",
+      "userId": "user-1783269673454",
+      "createdAt": "2026-07-16T00:04:05.998Z"
+    },
+    {
+      "articleId": "art-2",
+      "userId": "user-1783270729265",
+      "createdAt": "2026-07-05T16:58:49.836Z"
+    },
+    {
+      "articleId": "art-2",
+      "userId": "user-1783270847202",
+      "createdAt": "2026-07-05T17:00:47.671Z"
+    },
+    {
+      "createdAt": "2026-06-25T12:00:00Z",
+      "userId": "user-editor",
+      "articleId": "art-1"
+    },
+    {
+      "articleId": "art-2",
+      "userId": "user-writer-1",
       "createdAt": "2026-06-26T12:00:00Z"
     },
     {
-      "userId": "user-writer-1",
+      "createdAt": "2026-07-15T23:49:07.464Z",
       "articleId": "art-4",
-      "createdAt": "2026-07-15T23:49:07.464Z"
+      "userId": "user-writer-1"
     }
   ],
   "likes": [
     {
-      "userId": "user-editor",
-      "articleId": "art-1",
-      "createdAt": "2026-06-25T12:01:00Z"
+      "userId": "guest",
+      "articleId": "art-2",
+      "createdAt": "2026-07-04T07:05:17.362Z"
     },
     {
-      "userId": "user-writer-1",
+      "userId": "guest",
+      "articleId": "art-7",
+      "createdAt": "2026-07-04T21:43:07.020Z"
+    },
+    {
+      "createdAt": "2026-07-04T06:09:06.600Z",
+      "articleId": "art-2",
+      "userId": "user-1783105629479"
+    },
+    {
+      "userId": "user-1783105629479",
       "articleId": "art-3",
-      "createdAt": "2026-07-15T23:49:06.700Z"
+      "createdAt": "2026-07-04T06:09:04.839Z"
+    },
+    {
+      "articleId": "art-5",
+      "userId": "user-1783105629479",
+      "createdAt": "2026-07-05T16:37:07.686Z"
+    },
+    {
+      "createdAt": "2026-07-04T19:44:04.958Z",
+      "articleId": "art-2",
+      "userId": "user-1783145709270"
+    },
+    {
+      "userId": "user-1783145709270",
+      "articleId": "art-5",
+      "createdAt": "2026-07-05T16:39:00.512Z"
+    },
+    {
+      "createdAt": "2026-07-16T06:12:41.224Z",
+      "userId": "user-1783269673454",
+      "articleId": "art-2"
+    },
+    {
+      "articleId": "art-7",
+      "userId": "user-1783269673454",
+      "createdAt": "2026-07-16T00:05:18.833Z"
+    },
+    {
+      "createdAt": "2026-07-16T00:05:15.991Z",
+      "userId": "user-1783269673454",
+      "articleId": "art-8"
+    },
+    {
+      "articleId": "art-1",
+      "userId": "user-1783270729265",
+      "createdAt": "2026-07-05T16:58:49.621Z"
+    },
+    {
+      "createdAt": "2026-07-05T17:00:47.564Z",
+      "userId": "user-1783270847202",
+      "articleId": "art-1"
+    },
+    {
+      "userId": "user-1783270916190",
+      "articleId": "art-1",
+      "createdAt": "2026-07-05T17:01:56.367Z"
+    },
+    {
+      "articleId": "art-1",
+      "userId": "user-1783271653412",
+      "createdAt": "2026-07-05T17:14:13.681Z"
+    },
+    {
+      "articleId": "art-1",
+      "userId": "user-1784016918203",
+      "createdAt": "2026-07-14T08:15:19.030Z"
+    },
+    {
+      "createdAt": "2026-06-25T12:01:00Z",
+      "articleId": "art-1",
+      "userId": "user-editor"
+    },
+    {
+      "userId": "user-editor",
+      "articleId": "art-7",
+      "createdAt": "2026-07-16T19:06:19.658Z"
+    },
+    {
+      "createdAt": "2026-07-15T23:49:06.700Z",
+      "articleId": "art-3",
+      "userId": "user-writer-1"
     }
   ],
   "followers": [
     {
+      "followingId": "test-new-user-1",
+      "followerId": "guest",
+      "createdAt": "2026-07-09T08:54:11.491Z"
+    },
+    {
+      "createdAt": "2026-07-09T08:54:16.325Z",
+      "followingId": "user-1783145709270",
+      "followerId": "guest"
+    },
+    {
+      "createdAt": "2026-06-25T12:00:00Z",
       "followerId": "user-editor",
-      "followingId": "user-writer-1",
-      "createdAt": "2026-06-25T12:00:00Z"
+      "followingId": "user-writer-1"
     }
   ],
   "notifications": [
     {
-      "id": "not-1",
-      "userId": "user-writer-8",
-      "type": "Rejected",
-      "title": "Article Rejected",
       "message": "Your draft '10 Cryptocurrencies to Buy...' was rejected by Editor Arthur Vance. See editorial feedback.",
       "link": "/dashboard?tab=drafts",
+      "title": "Article Rejected",
+      "id": "not-1",
+      "userId": "user-writer-8",
       "read": false,
-      "createdAt": "2026-06-29T10:00:00Z"
+      "createdAt": "2026-06-29T10:00:00Z",
+      "type": "Rejected"
     },
     {
-      "id": "not-1784159346700",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T06:09:04.840Z",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "abraham david liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "id": "not-1783145344840",
       "userId": "user-writer-4",
+      "title": "Article Liked"
+    },
+    {
+      "id": "not-1783145346600",
+      "userId": "user-writer-5",
+      "title": "Article Liked",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "message": "abraham david liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T06:09:06.600Z"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-04T06:15:46.766Z",
       "type": "Comment",
       "title": "Article Liked",
+      "id": "not-1783145746766",
+      "userId": "user-writer-9",
+      "message": "A reader liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T06:15:50.281Z",
+      "id": "not-1783145750281",
+      "userId": "user-writer-7",
+      "title": "Article Liked",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "message": "A reader liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\"."
+    },
+    {
+      "message": "King Dave liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "title": "Article Liked",
+      "id": "not-1783145777394",
+      "userId": "user-writer-9",
+      "createdAt": "2026-07-04T06:16:17.394Z",
+      "read": false,
+      "type": "Comment"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-04T06:16:19.169Z",
+      "type": "Comment",
+      "title": "Article Liked",
+      "id": "not-1783145779169",
+      "userId": "user-writer-7",
+      "message": "King Dave liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T06:16:56.700Z",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "message": "King Dave liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "userId": "user-writer-9",
+      "id": "not-1783145816700",
+      "title": "Article Liked"
+    },
+    {
+      "createdAt": "2026-07-04T06:16:58.542Z",
+      "read": false,
+      "type": "Comment",
+      "title": "Article Liked",
+      "id": "not-1783145818542",
+      "userId": "user-writer-7",
+      "message": "King Dave liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces"
+    },
+    {
+      "message": "King Dave liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "title": "Article Liked",
+      "id": "not-1783145847297",
+      "userId": "user-writer-4",
+      "read": false,
+      "createdAt": "2026-07-04T06:17:27.297Z",
+      "type": "Comment"
+    },
+    {
+      "title": "Article Liked",
+      "userId": "user-writer-5",
+      "id": "not-1783145848653",
+      "message": "King Dave liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "read": false,
+      "createdAt": "2026-07-04T06:17:28.653Z",
+      "type": "Comment"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T07:05:17.362Z",
+      "id": "not-1783148717362",
+      "userId": "user-writer-5",
+      "title": "Article Liked",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "message": "Guest Reader liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\"."
+    },
+    {
+      "id": "not-1783194221364",
+      "userId": "user-writer-5",
+      "title": "Article Liked",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "message": "King Dave liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T19:43:41.364Z"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T19:43:48.058Z",
+      "id": "not-1783194228058",
+      "userId": "user-writer-4",
+      "title": "Article Liked",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "King Dave liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\"."
+    },
+    {
+      "title": "Article Liked",
+      "id": "not-1783194244958",
+      "userId": "user-writer-5",
+      "message": "King Dave liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "read": false,
+      "createdAt": "2026-07-04T19:44:04.958Z",
+      "type": "Comment"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-04T19:44:35.754Z",
+      "type": "Comment",
+      "message": "A reader liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "title": "Article Liked",
+      "userId": "user-writer-7",
+      "id": "not-1783194275754"
+    },
+    {
+      "message": "A reader liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "title": "Article Liked",
+      "userId": "user-writer-9",
+      "id": "not-1783194281974",
+      "read": false,
+      "createdAt": "2026-07-04T19:44:41.974Z",
+      "type": "Comment"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-04T19:44:45.031Z",
+      "type": "Comment",
+      "message": "A reader liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "title": "Article Liked",
+      "id": "not-1783194285031",
+      "userId": "user-writer-9"
+    },
+    {
+      "type": "Comment",
+      "createdAt": "2026-07-04T19:44:48.267Z",
+      "read": false,
+      "id": "not-1783194288267",
+      "userId": "user-writer-7",
+      "title": "Article Liked",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "message": "A reader liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\"."
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T19:44:51.137Z",
+      "id": "not-1783194291137",
+      "userId": "user-writer-7",
+      "title": "Article Liked",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "message": "A reader liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\"."
+    },
+    {
+      "message": "A reader liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "title": "Article Liked",
+      "id": "not-1783194293147",
+      "userId": "user-writer-7",
+      "read": false,
+      "createdAt": "2026-07-04T19:44:53.147Z",
+      "type": "Comment"
+    },
+    {
+      "createdAt": "2026-07-04T19:44:56.679Z",
+      "read": false,
+      "type": "Comment",
+      "message": "A reader liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "title": "Article Liked",
+      "id": "not-1783194296679",
+      "userId": "user-writer-9"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T19:44:58.684Z",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "message": "A reader liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "userId": "user-writer-9",
+      "id": "not-1783194298684",
+      "title": "Article Liked"
+    },
+    {
+      "link": "/article/ai-future-intellectual-property-rights",
+      "message": "Guest Reader liked your article: \"AI and the Future of Intellectual Property Rights\".",
+      "id": "not-1783201387020",
+      "userId": "user-writer-1",
+      "title": "Article Liked",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-04T21:43:07.020Z"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T16:37:07.686Z",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "message": "abraham david liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "id": "not-1783269427686",
+      "userId": "user-writer-7",
+      "title": "Article Liked"
+    },
+    {
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "message": "King Dave liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "userId": "user-writer-7",
+      "id": "not-1783269540512",
+      "title": "Article Liked",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T16:39:00.512Z"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T16:41:38.227Z",
+      "userId": "user-writer-4",
+      "id": "not-1783269698227",
+      "title": "Article Liked",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "A reader liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\"."
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-05T16:41:41.239Z",
+      "type": "Comment",
+      "message": "A reader liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "title": "Article Liked",
+      "id": "not-1783269701239",
+      "userId": "user-writer-7"
+    },
+    {
+      "message": "Cookie Gin liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "title": "Article Liked",
+      "id": "not-1783269830931",
+      "userId": "user-writer-4",
+      "read": false,
+      "createdAt": "2026-07-05T16:43:50.931Z",
+      "type": "Comment"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T16:43:55.981Z",
+      "id": "not-1783269835981",
+      "userId": "user-writer-9",
+      "title": "Article Liked",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "message": "Cookie Gin liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\"."
+    },
+    {
+      "id": "not-1783270729621",
+      "userId": "user-writer-2",
+      "title": "Article Liked",
+      "link": "/article/next-threshold-large-multimodal-architecture",
+      "message": "Test Reader liked your article: \"The Next Threshold of Large Multimodal Architecture\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T16:58:49.621Z"
+    },
+    {
+      "message": "New User FN liked your article: \"The Next Threshold of Large Multimodal Architecture\".",
+      "link": "/article/next-threshold-large-multimodal-architecture",
+      "title": "Article Liked",
+      "id": "not-1783270847564",
+      "userId": "user-writer-2",
+      "read": false,
+      "createdAt": "2026-07-05T17:00:47.564Z",
+      "type": "Comment"
+    },
+    {
+      "link": "/article/next-threshold-large-multimodal-architecture",
+      "message": "Flow Test liked your article: \"The Next Threshold of Large Multimodal Architecture\".",
+      "userId": "user-writer-2",
+      "id": "not-1783270916367",
+      "title": "Article Liked",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T17:01:56.367Z"
+    },
+    {
+      "userId": "user-writer-2",
+      "id": "not-1783271653681",
+      "title": "Article Liked",
+      "link": "/article/next-threshold-large-multimodal-architecture",
+      "message": "Test User liked your article: \"The Next Threshold of Large Multimodal Architecture\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T17:14:13.681Z"
+    },
+    {
+      "id": "not-1783292347414",
+      "userId": "user-writer-4",
+      "title": "Article Liked",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "Cookie Gin liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T22:59:07.414Z"
+    },
+    {
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "Cookie Gin liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "id": "not-1783292348575",
+      "userId": "user-writer-4",
+      "title": "Article Liked",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T22:59:08.575Z"
+    },
+    {
+      "title": "Article Liked",
+      "id": "not-1783292383516",
+      "userId": "user-writer-7",
+      "message": "Cookie Gin liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "createdAt": "2026-07-05T22:59:43.516Z",
+      "read": false,
+      "type": "Comment"
+    },
+    {
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "message": "Cookie Gin liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "id": "not-1783292414742",
+      "userId": "user-writer-5",
+      "title": "Article Liked",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T23:00:14.742Z"
+    },
+    {
+      "userId": "user-writer-4",
+      "id": "not-1783292417519",
+      "title": "Article Liked",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "Cookie Gin liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-05T23:00:17.519Z"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-09T08:53:49.449Z",
+      "type": "Follow",
+      "title": "New Follower",
+      "id": "not-1783587229449",
+      "userId": "user-1783145709270",
+      "message": "Guest Reader is now following you.",
+      "link": "/profile/guest"
+    },
+    {
+      "title": "New Follower",
+      "id": "not-1783587230381",
+      "userId": "user-1783105629479",
+      "message": "Guest Reader is now following you.",
+      "link": "/profile/guest",
+      "createdAt": "2026-07-09T08:53:50.381Z",
+      "read": false,
+      "type": "Follow"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-09T08:53:50.989Z",
+      "type": "Follow",
+      "message": "Guest Reader is now following you.",
+      "link": "/profile/guest",
+      "title": "New Follower",
+      "id": "not-1783587230989",
+      "userId": "test-new-user-1"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-09T08:54:11.491Z",
+      "type": "Follow",
+      "title": "New Follower",
+      "id": "not-1783587251491",
+      "userId": "test-new-user-1",
+      "message": "Guest Reader is now following you.",
+      "link": "/profile/guest"
+    },
+    {
+      "link": "/profile/guest",
+      "message": "Guest Reader is now following you.",
+      "id": "not-1783587256325",
+      "userId": "user-1783145709270",
+      "title": "New Follower",
+      "type": "Follow",
+      "read": false,
+      "createdAt": "2026-07-09T08:54:16.325Z"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-14T08:15:19.030Z",
+      "userId": "user-writer-2",
+      "id": "not-1784016919030",
+      "title": "Article Liked",
+      "link": "/article/next-threshold-large-multimodal-architecture",
+      "message": "Final Test User liked your article: \"The Next Threshold of Large Multimodal Architecture\"."
+    },
+    {
+      "title": "Article Liked",
+      "id": "not-1784158330519",
+      "userId": "user-writer-4",
+      "message": "Cookie Gin liked your article: \"Venture Velocity: Post-Hype Startup Funding Metrics\".",
+      "link": "/article/venture-velocity-post-hype-startup-funding-metrics",
+      "createdAt": "2026-07-15T23:32:10.519Z",
+      "read": false,
+      "type": "Comment"
+    },
+    {
+      "title": "Article Liked",
+      "userId": "user-writer-4",
+      "id": "not-1784158348659",
+      "message": "Cookie Gin liked your article: \"Venture Velocity: Post-Hype Startup Funding Metrics\".",
+      "link": "/article/venture-velocity-post-hype-startup-funding-metrics",
+      "read": false,
+      "createdAt": "2026-07-15T23:32:28.659Z",
+      "type": "Comment"
+    },
+    {
       "message": "Sarah Jenkins liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
       "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "title": "Article Liked",
+      "id": "not-1784159346700",
+      "userId": "user-writer-4",
       "read": false,
-      "createdAt": "2026-07-15T23:49:06.700Z"
+      "createdAt": "2026-07-15T23:49:06.700Z",
+      "type": "Comment"
+    },
+    {
+      "id": "not-1784160220371",
+      "userId": "user-writer-4",
+      "title": "Article Liked",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure",
+      "message": "A reader liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-16T00:03:40.371Z"
+    },
+    {
+      "id": "not-1784160239054",
+      "userId": "user-writer-4",
+      "title": "Article Liked",
+      "link": "/article/venture-velocity-post-hype-startup-funding-metrics",
+      "message": "Cookie Gin liked your article: \"Venture Velocity: Post-Hype Startup Funding Metrics\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-16T00:03:59.054Z"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-16T00:04:01.414Z",
+      "id": "not-1784160241414",
+      "userId": "user-writer-1",
+      "title": "Article Liked",
+      "link": "/article/ai-future-intellectual-property-rights",
+      "message": "Cookie Gin liked your article: \"AI and the Future of Intellectual Property Rights\"."
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-16T00:04:53.151Z",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "message": "Cookie Gin liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "id": "not-1784160293151",
+      "userId": "user-writer-5",
+      "title": "Article Liked"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-07-16T00:04:56.671Z",
+      "type": "Comment",
+      "title": "Article Liked",
+      "userId": "user-writer-4",
+      "id": "not-1784160296671",
+      "message": "Cookie Gin liked your article: \"The Silent Transformation of Global Micro-Grid Infrastructure\".",
+      "link": "/article/silent-transformation-global-micro-grid-infrastructure"
+    },
+    {
+      "type": "Comment",
+      "createdAt": "2026-07-16T00:05:15.991Z",
+      "read": false,
+      "id": "not-1784160315991",
+      "userId": "user-writer-4",
+      "title": "Article Liked",
+      "link": "/article/venture-velocity-post-hype-startup-funding-metrics",
+      "message": "Cookie Gin liked your article: \"Venture Velocity: Post-Hype Startup Funding Metrics\"."
+    },
+    {
+      "userId": "user-writer-1",
+      "id": "not-1784160318833",
+      "title": "Article Liked",
+      "link": "/article/ai-future-intellectual-property-rights",
+      "message": "Cookie Gin liked your article: \"AI and the Future of Intellectual Property Rights\".",
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-16T00:05:18.833Z"
+    },
+    {
+      "type": "Comment",
+      "read": false,
+      "createdAt": "2026-07-16T06:12:39.324Z",
+      "id": "not-1784182359323",
+      "userId": "user-writer-5",
+      "title": "Article Liked",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "message": "Cookie Gin liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\"."
+    },
+    {
+      "title": "Article Liked",
+      "id": "not-1784182361224",
+      "userId": "user-writer-5",
+      "message": "Cookie Gin liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "link": "/article/quantum-decoupling-absolute-entanglement",
+      "read": false,
+      "createdAt": "2026-07-16T06:12:41.224Z",
+      "type": "Comment"
+    },
+    {
+      "createdAt": "2026-07-16T18:47:31.779Z",
+      "read": false,
+      "type": "Comment",
+      "title": "Article Liked",
+      "id": "not-1784227651779",
+      "userId": "user-writer-5",
+      "message": "Sarah Jenkins liked your article: \"Quantum Decoupling and the Search for Absolute Entanglement\".",
+      "link": "/article/quantum-decoupling-absolute-entanglement"
+    },
+    {
+      "message": "Sarah Jenkins liked your article: \"Vascular Aging: Reversing Cellular Stiffness through Biotech\".",
+      "link": "/article/vascular-aging-reversing-cellular-stiffness-biotech",
+      "title": "Article Liked",
+      "userId": "user-writer-9",
+      "id": "not-1784228725953",
+      "createdAt": "2026-07-16T19:05:25.953Z",
+      "read": false,
+      "type": "Comment"
+    },
+    {
+      "title": "Article Liked",
+      "id": "not-1784228779140",
+      "userId": "user-writer-7",
+      "message": "Sarah Jenkins liked your article: \"Designing for Solitude: The Architecture of Quiet Spaces\".",
+      "link": "/article/designing-for-solitude-architecture-quiet-spaces",
+      "read": false,
+      "createdAt": "2026-07-16T19:06:19.140Z",
+      "type": "Comment"
+    },
+    {
+      "id": "not-1784228779658",
+      "userId": "user-writer-1",
+      "title": "Article Liked",
+      "link": "/article/ai-future-intellectual-property-rights",
+      "message": "Arthur Vance liked your article: \"AI and the Future of Intellectual Property Rights\".",
+      "type": "Comment",
+      "createdAt": "2026-07-16T19:06:19.658Z",
+      "read": false
+    },
+    {
+      "message": "Cookie Gin liked your article: \"The Next Threshold of Large Multimodal Architecture\".",
+      "link": "/article/next-threshold-large-multimodal-architecture",
+      "title": "Article Liked",
+      "userId": "user-writer-2",
+      "id": "not-1784297465911",
+      "read": false,
+      "createdAt": "2026-07-17T14:11:05.911Z",
+      "type": "Comment"
     }
   ],
   "subscribers": [

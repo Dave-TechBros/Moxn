@@ -20,43 +20,65 @@ let firestoreDbInstance: any = null;
 let syncQueuePromise: Promise<void> = Promise.resolve();
 let isLoadedFromFirestore = false;
 let loadPromise: Promise<any> | null = null;
+let firestoreLoadAttempted = false;
 
 async function ensureDbLoaded() {
-  if (MEMORY_DB) {
-    return MEMORY_DB;
+  // If no Firestore configured, just load from local file (fast path)
+  if (!firestoreDbInstance) {
+    if (!MEMORY_DB) {
+      initDatabase();
+    }
+    return MEMORY_DB!;
   }
-  if (!loadPromise) {
-    loadPromise = (async () => {
-      if (!MEMORY_DB) {
-        initDatabase(); // This reads from disk synchronously first
-      }
-      if (firestoreDbInstance && !MEMORY_DB) {
-        console.log("[Firestore] ensureDbLoaded: Fetching database from Cloud Firestore...");
+
+  // Firestore IS configured - try to load from Firestore on first request
+  // to get the latest data, overriding any local cache
+  if (!firestoreLoadAttempted) {
+    firestoreLoadAttempted = true;
+
+    // Ensure local cache is loaded first as fallback
+    if (!MEMORY_DB) {
+      initDatabase();
+    }
+
+    try {
+      console.log("[Firestore] ensureDbLoaded: Fetching database from Cloud Firestore...");
+      const firestoreDb = await loadFromFirestore();
+      if (firestoreDb) {
+        // Firestore has real data - use it as source of truth
+        MEMORY_DB = firestoreDb;
         try {
-          const firestoreDb = await loadFromFirestore();
-          if (firestoreDb) {
-            MEMORY_DB = firestoreDb;
-            try {
-              fs.writeFileSync(DB_FILE, JSON.stringify(firestoreDb, null, 2));
-            } catch (writeErr) {
-              console.warn("Warning: Could not save Cloud-loaded database cache to disk:", writeErr);
-            }
-          } else {
-            console.warn("[Firestore] Failed to load database from Firestore (returned null), will retry on next request.");
-            loadPromise = null;
+          fs.writeFileSync(DB_FILE, JSON.stringify(firestoreDb, null, 2));
+          console.log("[Firestore] Database loaded from Firestore and cached to disk.");
+        } catch (writeErr) {
+          console.warn("[Firestore] Could not save Firestore cache to disk (read-only fs?), using in-memory:", (writeErr as any).message);
+        }
+      } else {
+        // Firestore is empty - keep local cache and seed Firestore from it
+        console.log("[Firestore] Firestore is empty. Seeding from local database cache...");
+        if (!MEMORY_DB) {
+          initDatabase();
+        }
+        if (MEMORY_DB) {
+          try {
+            await seedFirestore();
+            console.log("[Firestore] Local cache seeded to Firestore successfully.");
+          } catch (seedErr) {
+            console.error("[Firestore] Failed to seed Firestore from local cache:", seedErr);
           }
-        } catch (dbErr) {
-          console.error("[Firestore] Error loading database from Firestore, will retry on next request:", dbErr);
-          loadPromise = null;
         }
       }
-    })();
+    } catch (dbErr) {
+      console.error("[Firestore] Error loading from Firestore, keeping local cache:", dbErr);
+      if (!MEMORY_DB) {
+        initDatabase();
+      }
+    }
   }
-  try {
-    await loadPromise;
-  } catch (err) {
-    console.error("[Firestore] loadPromise rejected, using local database:", err);
-    loadPromise = null;
+
+  // Ensure we always have data loaded (fallback if Firestore failed)
+  if (!MEMORY_DB) {
+    initDatabase();
   }
   return MEMORY_DB!;
 }
@@ -660,56 +682,57 @@ try {
   console.error("[Firestore] Failed to initialize Firebase Client SDK:", err);
 }
 
-async function seedFirestore() {
+async function seedFirestore(db?: ServerDatabase) {
   if (!firestoreDbInstance) return;
+  const sourceDb = db || MEMORY_DB || DEFAULT_SEED_DB;
   try {
     console.log("[Firestore] Starting Firestore seeding...");
     const batch = writeBatch(firestoreDbInstance);
 
-    DEFAULT_SEED_DB.users.forEach((item) => {
+    sourceDb.users.forEach((item) => {
       const docRef = doc(firestoreDbInstance, "users", item.id);
       batch.set(docRef, item);
     });
 
-    DEFAULT_SEED_DB.articles.forEach((item) => {
+    sourceDb.articles.forEach((item) => {
       const docRef = doc(firestoreDbInstance, "articles", item.id);
       batch.set(docRef, item);
     });
 
-    DEFAULT_SEED_DB.categories.forEach((item) => {
+    sourceDb.categories.forEach((item) => {
       const docRef = doc(firestoreDbInstance, "categories", item.id);
       batch.set(docRef, item);
     });
 
-    DEFAULT_SEED_DB.comments.forEach((item) => {
+    sourceDb.comments.forEach((item) => {
       const docRef = doc(firestoreDbInstance, "comments", item.id);
       batch.set(docRef, item);
     });
 
-    (DEFAULT_SEED_DB.bookmarks || []).forEach((item) => {
+    (sourceDb.bookmarks || []).forEach((item) => {
       const docId = `${item.userId}_${item.articleId}`;
       const docRef = doc(firestoreDbInstance, "bookmarks", docId);
       batch.set(docRef, item);
     });
 
-    (DEFAULT_SEED_DB.likes || []).forEach((item) => {
+    (sourceDb.likes || []).forEach((item) => {
       const docId = `${item.userId}_${item.articleId}`;
       const docRef = doc(firestoreDbInstance, "likes", docId);
       batch.set(docRef, item);
     });
 
-    (DEFAULT_SEED_DB.followers || []).forEach((item) => {
+    (sourceDb.followers || []).forEach((item) => {
       const docId = `${item.followerId}_${item.followingId}`;
       const docRef = doc(firestoreDbInstance, "followers", docId);
       batch.set(docRef, item);
     });
 
-    (DEFAULT_SEED_DB.notifications || []).forEach((item) => {
+    (sourceDb.notifications || []).forEach((item) => {
       const docRef = doc(firestoreDbInstance, "notifications", item.id);
       batch.set(docRef, item);
     });
 
-    (DEFAULT_SEED_DB.subscribers || []).forEach((item) => {
+    (sourceDb.subscribers || []).forEach((item) => {
       const docId = item.email.replace(/[@.]/g, "_");
       const docRef = doc(firestoreDbInstance, "subscribers", docId);
       batch.set(docRef, item);
@@ -749,9 +772,8 @@ async function loadFromFirestore(): Promise<ServerDatabase | null> {
     ]);
 
     if (usersSnap.empty) {
-      console.log("[Firestore] No users found, seeding Firestore with default data...");
-      await seedFirestore();
-      return DEFAULT_SEED_DB;
+      console.log("[Firestore] No users found in Firestore (empty database). Falling back to local cache.");
+      return null;
     }
 
     const loadedDb: ServerDatabase = {
@@ -960,10 +982,13 @@ function saveDB(db: ServerDatabase) {
   try {
     fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
   } catch (err) {
-    console.warn("Warning: Failed to persist database changes to disk.", err);
+    console.warn("[DB] Warning: Failed to persist database changes to disk (read-only filesystem?). Data is preserved in memory. Error:", (err as any).message);
   }
 
   if (firestoreDbInstance && oldDb) {
+    // Firestore sync is chained onto syncQueuePromise. The middleware's res.json
+    // interceptor awaits syncQueuePromise before sending the response, ensuring
+    // the Firestore write completes before the client receives the response.
     syncToFirestoreAsync(db, oldDb).catch((err) => {
       console.error("[Firestore] Async sync trigger failed:", err);
     });
@@ -1966,12 +1991,22 @@ app.get("/api/analytics", (req, res) => {
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {
     // Dev Mode - Mount Vite Express Middleware
-    const { createServer: createViteServer } = await import("vite");
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
+    try {
+      const { createServer: createViteServer } = await import("vite");
+      const vite = await createViteServer({
+        server: { middlewareMode: true },
+        appType: "spa",
+      });
+      app.use(vite.middlewares);
+    } catch (viteErr) {
+      console.warn("[Server] Vite dev middleware unavailable, falling back to static serving:", (viteErr as Error).message);
+      // Fallback: serve dist/ if available, otherwise API-only
+      const distPath = path.join(process.cwd(), "dist");
+      app.use(express.static(distPath));
+      app.get("*", (req, res) => {
+        res.sendFile(path.join(distPath, "index.html"));
+      });
+    }
   } else {
     // Production Mode - Serve precompiled statics
     const distPath = path.join(process.cwd(), "dist");
@@ -1988,7 +2023,10 @@ async function startServer() {
 
 // Do not start the persistent listener if running in a serverless function environment (like Vercel)
 if (process.env.VERCEL !== "1") {
-  startServer();
+  startServer().catch((err) => {
+    console.error("[Server] Failed to start HTTP server:", err);
+    process.exit(1);
+  });
 }
 
 export default app;
